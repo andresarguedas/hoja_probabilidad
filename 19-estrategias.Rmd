@@ -1,0 +1,30 @@
+# Estrategias de Resolución de Problemas {#estrategias}
+
+Contribuciones de Jessy Hwang, Yuan Jiang y Yuqi Hou
+
+1. $\textbf{Para empezar.}$ Empiece $\textit{definiendo los eventos relevantes y las variables aleatorias}$("Sea Y el evento donde escojo la moneda justa"; "Sea X el numero de éxitos"). Una noción clara es importante para lograr pensar con claridad. Luego decida que es lo que debe encontrar, en términos de su notación ("Quiero encontrar $P(X=3|A)$"). Piense qué tipo de objeto debería ser su respuesta (un número, variable aleatoria, PMF, PDF, etc.) y en términos de que debería estar.
+$\textit{Intente casos simples y extremos.}$ Para convertir un experimento abstracto en algo más concreto, intente $\textit{dibujar una imagen}$ o inventar números que podrían haber sucedido. Reconocimiento de patrones: ¿la estructura del problema se parece a algo que ha visto antes?
+
+2. $\textbf{Calcular la probabilidad de un evento.}$ Use los principios de conteo si la definición de probabilidad simple aplica. ¿Es más fácil encontrar la probabilidad del complemento? Busque simetrías. Busque algo que pueda condicionar y luego utilice la Regla de Bayes o la Ley de la Probabilidad Total?.
+
+3. $\textbf{Encontrar la distribucion de una variable aleatoria.}$ Primero asegúrese de que necesita la distribución completa y no solo la media (vea el siguiente ítem). Revise el $\textit{dominio}$ de la variable aleatoria: ¿qué valores puede tomar? Use esto para descartar distribuciones que no se ajusten. ¿Hay algún historia de las distribuciones conocidas que se ajuste a su problema? ¿Puede escribir la variable aleatoria como una función de una v.a. con una distribución conocida, digamos $Y=g(X)$?
+
+4. $\textbf{Calcular esperanzas.}$ Si es una distribución conocida, revise la tabla de distribuciones. Si es una función de una v.a. con una distribución conocida, intente usar LOTUS?. Si es el conteo de algo, intente separarlo en el indicador de v.a.s. Si puede condicionar usando algo natural, considere usar la Ley de Adam. 
+
+5. $\textbf{Calcular varianzas.}$ Considere la independencia, las distribuciones conocidas y LOTUS. Si sirve de algo, sepárelo en la suma de indicadores de v.a.s. Si es una suma, use las propiedades de la covarianza. Si puede condicionar usando algo natural, considere la Ley de Eva.
+
+6. $\textbf{Calcular}$ $E(X^2)$. ¿Ya conoce $E(X)$ o $Var(X)$? Recuerde $Var(X)=E(X^2)-(E(X))^2$. De otra forma, utilice LOTUS?.
+
+7. $\textbf{Calcular covarianzas.}$ Use las propiedades de covarianza. Si esta intentando encontrar la covarianza entre dos componentes de una distribución Multinomial $X_i,X_j$, entonces la covarianza es $-np_i p_j$ para $i \ne j$.
+
+8. $\textbf{Simetria.}$ Si $X_1,...,X_n$ son i.i.d, considere usar la simetría.
+
+9. $\textbf{Calcular probabilidades de ordenamientos.}$ Recuerde que todos los $n!$ ordenamientos de variables continuas i.i.d. $X_1,...,X_n$ son igualmente posibles.
+
+10. $\textbf{Determinar independencia.}$ Hay varias definiciones equivalentes. Piense en casos simples y extremos para ver si puede encontrar un contra ejemplo.
+
+11. $\textbf{Realice una integral compleja.}$ Si su integral se ve muy compleja, observe si puede escribirla en términos de una PDF conocida (como Gamma o Beta) y use ese hecho para que esa PDF integre a 1. 
+
+12. $\textbf{Antes de seguir adelante.}$ Revise casos simples y extremos, revise si la respuesta parece creíble, revise si hay "equivocaciones comunes".
+
+

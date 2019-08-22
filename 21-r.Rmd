@@ -1,0 +1,24 @@
+# Distribuciones en R {#r}
+___________________________________________________________
+
+|      Comando        |     Lo que hace      | 
+|---------------------|----------------------|
+| help(distributions) | muestra la documentación de las distribuciones |
+| dbinom(k,n,p)       | PMF $P(X=k)$ para $X \sim Bin(n,p)$ |
+| pbinom(x,n,p)       | CDF $P(X\le x$ para $X \sim Bin (n,p)$  |
+| qbinom(a,n,p)       | $a-esimo$ cuantil para $X \sim Bin (n,p)$ |
+| rbinom(r,n,p)       | vector de $r$ i.i.d. para v.a. $Bin (n,p)$ |
+| dgeom(k,p)          | PMF $P(X=k)$ para $X \sim Geom(p)$ |
+| dhyper(k,w,b,n)     | PMF $P(X=k)$ para $X \sim HGeom(w,b,n)$ |   
+| dnbinom(k,r,p)      | PMF $P(X=k)$ para $X \sim NBin(r,p)$ |
+| dpois(k,r)          | PMF $P(X=k)$ para $X \sim Pois(r)$ |
+| dbeta(x,a,b)        | PDF $f(x)$ para $X \sim Beta(a,b)$ |
+| dchisq(x,n)         | PDF $f(x)$ para $X \sim X^2_n$ |
+| dexp(x,b)           | PDF $f(x)$ para $X \sim Expo(b)$ |
+| dgamma(x,a,r)       | PDF $f(x)$ para $X \sim Gamma(a,r)$ |
+| dlnorm(x,m,s)       | PDF $f(x)$ para $X \sim LN(m,s^2)$ |
+| dnorm(x,m,s)        | PDF $f(x)$ para $X \sim N(m,s^2)$ |
+| dt(x,n)             | PDF $f(x)$ para $X \sim t_n$ |
+| dunif(x,a,b)        | PDF $f(x)$ para $X \sim Unif(a,b)$ |
+
+La tabla anterior da comandos de R para trabajar con distribuciones conocidas. Comandos análogos a $pbinom,qbinom$ y $rbinom$ funcionan para las otras distribuciones de la tabla. Por ejemplo, $pnorm, qnorm$ y $rnorm$ pueden usarse para obtener la CDF, cuantiles y generación aleatoria para una Normal. Para la Multinomial, $dmultinom$ puede usarse para calcular la PMF conjunta y $rmulinom$ para generar vectores aleatorios. Para la Normal Multivariada, después de instalar y cargar el paquete $mvtnorm$, $dmvnorm$ puede usarse para calcular la PDF conjunta y $rmvnorm$ para generar vectores aleatorios.

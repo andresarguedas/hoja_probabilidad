@@ -1,0 +1,89 @@
+# Distribuciones Continuas
+
+
+## Distribución Uniforme
+Digamos que $U$ se distribuye $Unif(a,b)$. Sabemos lo siguiente:
+
+$\textbf{Propiedades de la Uniforme}$: Para una distribución Uniforme, la probabilidad de un empate en cualquier intervalo dentro del dominio es proporcional al largo del intervalo. Vea $\textit{Universalidad de la Uniforme y Otros Estadísticos}$ para otras propiedades.
+
+$\textbf{Ejemplo:}$ William tira dardos muy mal, entonces sus dardos se encuentran distribuciones uniformemente en toda la habitación porque es igualmente posible que aparezcan en cualquier lugar. Los dardos de William tienen una distribución Uniforme en la superficie de la habitación. La Uniforme es la única distribución donde la probabilidad de una región específica es proporcional al largo/área/volumen de esa región, y la densidad de ocurrencia en cualquier punto es constante en todo el dominio.
+
+## Distribución Normal
+Digamos que X se distribuye $N(\mu, \sigma ^2)$. Sabemos lo siguiente:
+
+$\textbf{Teorema del Límite Central:}$ La distribución Normal es ubicua gracias al Teorema del Límite Central, el cual dice que la media muestral de v.a.s que son i.i.d. va a aproximar una distribución Normal conforme el tamaño de la muestra crezca, sin importar la distribución inicial.
+
+$\textbf{Transformación Escala-Locación:}$ Siempre que cambiemos de posición  una v.a. Normal (agregando una constante) o cambiemos de escala una Normal (multiplicando por una constante), la cambiamos por otro v.a. Normal. Para cualquier $X$~$N(\mu,\sigma^2)$, la podemos transformar en una v.a. $N(0,1)$ utilizando la siguiente transformación:
+
+$Z=\frac{X-\mu}{\sigma}\sim N(0,1)$
+
+$\textbf{Normal Estándar:}$ La Normal Estándar, $Z$~$N(0,1)$, tiene media 0 y varianza 1. SU CDF se denota con $\Phi$.
+
+## Distribución Exponencial
+Digamos que X se distribuye $Expo(\lambda)$. Sabemos lo siguiente:
+
+$\textbf{Historia:}$ Usted está sentado en un campo abierto justo antes del amanecer, deseando que los aviones en el cielo de la noche lanzaran estrellas fugaces, porque le serviría mucho un deseo en este momento. Usted sabe que las estrellas fugaces llegan cada 15 minutos en promedio, pero una estrella fugaz no "tiene que" venir solo porque usted espero mucho tiempo. Su tiempo de espera "no tiene memoria"; el tiempo adicional hasta la siguiente estrella fugaz llegue no depende en el tiempo que usted haya esperado. 
+
+$\textbf{Ejemplo:}$ El tiempo de espera hasta la siguiente estrella fugaz está distribuido en $Expo(4)$ horas. Aquí $\lambda =4$ es el $\textbf{parámetro de ritmo/velocidad}$, dado que las estrellas fugaces llegan a un ritmo de 1 cada $1/4$ horas en promedio. El tiempo esperado hasta la siguiente estrella fugaz es $1/\lambda =1/4$ horas.
+
+$\textbf{Expos rescaladas como Expo(1):}$
+
+$Y$~$Expo(\lambda) \rightarrow X=\lambda Y$~$Expo(1)$
+
+$\textbf{Sin memoria:}$ La distribución Exponencial es la única distribución continua sin memoria. Esta propiedad dice que para $X\sim Expo(\lambda)$ y números positivos cualquiera $s$ y $t$,
+
+$P(X>s+t|X>s)=P(X>t)$
+
+Lo que es equivalente a,
+
+$X-a|(X>a)\sim Expo(\lambda)$
+
+Por ejemplo, un producto con esperanza de vida $Expo(\lambda)$ está siempre "como nuevo" (no experimenta desgaste). Dado que el producto ha sobrevivido $a$ años, el tiempo adicional que va a durar sigue siendo $Expo(\lambda)$.
+
+$\textbf{Min de una Expo:}$ Si tenemos $X_i$~$Expo(\lambda_i)$ independientes, entonces $min(X_1,...,X_k)$~$Expo(\lambda_1+\lambda_2+...+\lambda_k)$.
+$\textbf{Max de una Expo:}$ Si tenemos $X_i$~$Expo(\lambda)$ i.i.d., entonces $max(X_1,...,X_k)$ tiene la misma distribución que $Y_1+Y_2+...+Y_k$, donde $Y_j$~$Expo(j\lambda)$ y las $Y_j$ son independientes.
+
+
+## Distribución Gamma
+
+![](12.PNG)
+
+Digamos que X se distribuye $Gamma(\alpha,\lambda)$. Sabemos lo siguiente:
+
+$\textbf{Historia:}$ Usted está sentado esperando estrellas fugaces, donde el tiempo de espera se distribuye $Expo(\lambda)$. Quiere ver $n$ estrellas fugaces antes de irse a casa. El tiempo total de espera para la $n-ésima$ estrella fugaz es $Gamma(n,\lambda)$.
+
+$\textbf{Ejemplo:}$ Usted está en un banco y hay 3 personas delante suyo. El tiempo de atención para cada persona es Exponencial con media de 2 minutos. Solo una persona puede ser atendida a la vez. La distribución del tiempo de espera hasta que sea su turno es $Gamma(3,\frac{1}{2})$.
+
+
+## Distribución Beta
+
+![](13.PNG)
+
+$\textbf{Previa Conjugada para la Binomial: }$ En la aproximación Bayesiana a la Estadística, los parámetros son vistos como variables aleatorias para reflejar la incertidumbre. La $\textit{previa}$ para un parámetro es su distribución antes de observar los datos. La $\textit{posterior}$ es la distribución para el parámetro después de observar los datos. La distribución Beta es una previa $\textit{conjugada}$ para la Binomial porque su usted tiene una previa Beta para $p$ en una Binomial, entonces la distribución posterior también se distribuye Beta. Considere el siguiente modelo de dos niveles:
+
+$X|p\sim Bin(n,p)$
+
+$p$~$Beta(a,b)$
+
+Entonces después de observar $X=x$, obtenemos la distribución posterior
+
+$p|(X=x)$~$Beta(a+x, b+n-x)$
+
+$\textbf{Estadísticos de Orden de la Uniforme:}$ Ver $\textit{Estadísticos de Orden}$. 
+
+$\textbf{Relación Beta-Gamma:}$ Si $X$~$Gamma(\alpha, \lambda)$, $Y$~$Gamma(b,\lambda)$, con $X \perp Y$ entonces:
+
+$\bullet$ $\frac{X}{X+Y}\sim Beta(a,b)$
+
+$\bullet$ $X + Y \perp \frac{X}{X+Y}$
+
+## Distribución Chi-Cuadrado
+Digamos que X se distribuye $X^2$. Sabemos lo siguiente:
+
+$\textbf{Historia:}$ Una $Chi-Cuadrado(n)$ es la suma de v.a. Normales Estándar al cuadrado.
+
+$\textbf{Propiedades y Representaciones:}$
+
+X está distribuida como $Z^2_1+Z^2_2+...+Z^2_n$ para $Z_i \sim N(0,1)$ i.i.d.
+
+$X\sim Gamma(n/2,1/2)$

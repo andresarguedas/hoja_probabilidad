@@ -1,0 +1,15 @@
+# Fuentes Recomendadas {#fuentes}
+
+$\bullet$ Libro Introducción a la Probabilidad (http://bit.ly/introprobability)
+
+$\bullet$ Stat 110 Online (http://stat110.net)
+
+$\bullet$ Blog Stat 110 Quora (https://stat110.quora.com/)
+
+$\bullet$ Quora Probabilidad Preguntas Frecuentes (http://bit.ly/probabilityfaq)
+
+$\bullet$ R Studio (https://www.rstudio.com)
+
+$\bullet$ Archivo LaTeX (github.com/wzchen/probability cheatsheet)
+
+$\textit{¡Porfavor compartir con amigos!}$

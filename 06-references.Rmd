@@ -1,3 +1,83 @@
-`r if (knitr::is_html_output()) '
-# References {-}
-'`
+# Covarianza y Transformaciones {#cov}
+
+
+## Covarianza y Correlación 
+$\textbf{La covarianza}$ es el análogo de la varianza para dos variables aleatorias.
+
+$Cov(X,Y)=E((X-E(X))(Y-E(Y)))=E(XY)-E(X)E(Y)$
+
+Note que
+
+$Cov(X,X)=E(X^2)-(E(X))^2=Var(X)$
+
+$\textbf{La correlación}$ es una versión estandarizada de la covarianza que siempre está entre -1 y 1
+
+$Corr(X,Y)=\frac{Cov(X,Y)}{\sqrt{Var(X)Var(Y)}}$
+
+$\textbf{Covarianza e Independencia}$
+Si dos variables aleatorias son independientes, entonces no se correlacionan. El inverso no siempre es cierto. (e.j., considere $X~N(0,1)$ y $Y=X^2$).
+
+$X \perp Y \longrightarrow Cov(X,Y) = 0 \longrightarrow E(XY) = E(X)E(Y)$
+
+$\textbf{Covarianza y Varianza}$
+La varianza de una suma se puede encontrar de la forma
+
+$Var(X+Y)=Var(X)+Var(Y)+2Cov(X,Y)$
+
+$Var(X_1+X_2+...+X_n)= \displaystyle\sum_{i=1}^{n}Var(X_i)+2\displaystyle\sum_{i<j}Cov(X_i, X_j)$
+
+Si X y Y son independientes entonces tienen covarianza 0, entonces
+$X \perp Y 	\Longrightarrow Var(X+Y)=Var(X)+Var(Y)$
+
+Si $X_1, X_2,...,X_n$ están idénticamente distribuidas y tienen la misma relación de covarianza (comúnmente por simetría), entonces
+
+$Var(X_1 + X_2 + ... + X_n)=nVar(X_1)+2 \binom{n}{2}Cov(X_1, X_2)$
+
+
+$\textbf{Propiedades de la Covarianza}$
+Para las v.a. W,X,Y y Z y las constantes a,b:
+
+$Cov(X,Y)=Cov(Y,X)$
+ 
+$Cov(X+a, Y+b)=Cov(X,Y)$
+
+$Cov(aX,bY)=abCov(X,Y)$
+
+$Cov(W+X,Y+Z)=Cov(W,Y)+Cov(W,Z)+Cov(X,Y)+COv(X,Z)$
+
+
+$\textbf{La correlación es una invariante de locación y de escala}$
+Para cualquier constantes a,b,c,d con a y c diferentes a 0,
+$Corr(aX +b,cY+d)=Corr(X,Y)$
+
+## Transformaciones
+$\textbf{Transformaciones de una variable}$
+Digamos que tenemos una variable aleatoria $X$ con PDF $f_X(x)$, pero también estamos interesados en una función de $X$. Le decimos a esta función $Y=g(X)$. También digamos que $y=g(x)$. Si $g$ es diferenciable y estrictamente creciente o estrictamente decreciente, entonces la PDF de Y es
+
+$f_Y(y)=f_X(x) \Big| \frac{dx}{dy} \Big| = f_X(g^{-1}(y)) \Big| \frac{d}{dy} g^{-1}(y) \Big|$
+
+La derivada de la transformación inversa se llama el $\textbf{Jacobiano}$
+
+$\textbf{Transformaciones de dos variables}$
+Similarmente, digamos que sabemos la PDF conjunta de U y V pero también estamos interesado en el vector aleatorio $(X,Y)$ definido por $(X,Y)=g(U,V)$. Entonces
+
+$\frac{\partial(u,v)}{\partial(x,y)}= \begin{pmatrix} \frac{\partial u}{\partial x} & \frac{\partial u}{\partial y} \\ \frac{\partial v}{\partial x} & \frac{\partial v}{\partial y} \end{pmatrix}$
+
+Es la $\textbf{Matriz Jacobiana}$. Si las entradas en esta matriz existen y son continuas, y el determinante es diferente de 0, entonces
+$f_{X,Y}(x,y)=f_{U,V}(u,v) \begin{Vmatrix} \frac{\partial (u,v)}{\partial (x,y)}\end{Vmatrix}$
+
+
+Las barras internas nos dicen que tomemos el determinante de la matriz, y las linea externas nos dicen que tomemos el valor absoluto. En una matriz $2 \times 2$,
+$\begin{Vmatrix} a & b \\ c & d\end{Vmatrix}= |ad - bc|$
+
+
+## Convoluciones
+$\textbf{Integral de convolución}$ 
+SI usted quiere encontrar la PDF de la suma de dos v.a.c. X y Y, puede hacer la siguiente integral:
+$f_{X+Y}(t)= \displaystyle\int_{-\infty}^{\infty}f_X(x)f_Y(t-x)dx$
+
+$\textbf{Ejemplo:}$ Sean $X,Y~N(0,1)$ i.i.d. Además para cada $t$,
+
+$f_{X+Y}(t)=\displaystyle\int_{-\infty}^{\infty}\frac{1}{\sqrt{2 \pi}}e^{-x^2/2} \frac{1}{\sqrt{2 \pi}}e^{-(t-x)^2/2}dx$
+
+Completando el cuadrado y usando el hecho de que una PDF Normal integra a 1, esto termina siendo una $f_{X+Y}(t)$ específicamente una PDF $N(0,2)$.
