@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Variables aleatorias y sus distribuciones | Hoja de Referencia de Probabilidad</title>
+  <meta name="description" content="Traducción de la hoja de referencia de probabilidad creada por William Chen et. al." />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Variables aleatorias y sus distribuciones | Hoja de Referencia de Probabilidad" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Traducción de la hoja de referencia de probabilidad creada por William Chen et. al." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Variables aleatorias y sus distribuciones | Hoja de Referencia de Probabilidad" />
+  
+  <meta name="twitter:description" content="Traducción de la hoja de referencia de probabilidad creada por William Chen et. al." />
+  
+
+<meta name="author" content="Andrea Vargas" />
+
+
+<meta name="date" content="2019-08-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="condicional.html">
+<link rel="next" href="valores-esperados-y-funcion-indicadora.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Hoja de Referencia de Probabilidad</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="contar.html"><a href="contar.html"><i class="fa fa-check"></i><b>1</b> Contar</a><ul>
+<li class="chapter" data-level="1.1" data-path="contar.html"><a href="contar.html#regla-de-la-multiplicacion"><i class="fa fa-check"></i><b>1.1</b> Regla de la multiplicación</a></li>
+<li class="chapter" data-level="1.2" data-path="contar.html"><a href="contar.html#espacio-muestral"><i class="fa fa-check"></i><b>1.2</b> Espacio muestral</a></li>
+<li class="chapter" data-level="1.3" data-path="contar.html"><a href="contar.html#definicion-simple-de-probabilidad"><i class="fa fa-check"></i><b>1.3</b> Definición simple de probabilidad</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="condicional.html"><a href="condicional.html"><i class="fa fa-check"></i><b>2</b> Pensando condicionalmente</a><ul>
+<li class="chapter" data-level="2.1" data-path="condicional.html"><a href="condicional.html#independencia"><i class="fa fa-check"></i><b>2.1</b> Independencia</a></li>
+<li class="chapter" data-level="2.2" data-path="condicional.html"><a href="condicional.html#uniones-intersecciones-y-complementos"><i class="fa fa-check"></i><b>2.2</b> Uniones, Intersecciones y Complementos</a></li>
+<li class="chapter" data-level="2.3" data-path="condicional.html"><a href="condicional.html#conjuntas-marginales-y-condicionales"><i class="fa fa-check"></i><b>2.3</b> Conjuntas, Marginales y Condicionales</a></li>
+<li class="chapter" data-level="2.4" data-path="condicional.html"><a href="condicional.html#probabilidad-de-union-o-interseccion"><i class="fa fa-check"></i><b>2.4</b> Probabilidad de Unión o Intersección</a></li>
+<li class="chapter" data-level="2.5" data-path="condicional.html"><a href="condicional.html#la-paradoja-de-simpson"><i class="fa fa-check"></i><b>2.5</b> La paradoja de Simpson:</a></li>
+<li class="chapter" data-level="2.6" data-path="condicional.html"><a href="condicional.html#ley-de-la-probabilidad-total-lpt"><i class="fa fa-check"></i><b>2.6</b> Ley de la Probabilidad Total (LPT)</a></li>
+<li class="chapter" data-level="2.7" data-path="condicional.html"><a href="condicional.html#regla-de-bayes"><i class="fa fa-check"></i><b>2.7</b> Regla de Bayes</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="variables-aleatorias-y-sus-distribuciones.html"><a href="variables-aleatorias-y-sus-distribuciones.html"><i class="fa fa-check"></i><b>3</b> Variables aleatorias y sus distribuciones</a><ul>
+<li class="chapter" data-level="3.1" data-path="variables-aleatorias-y-sus-distribuciones.html"><a href="variables-aleatorias-y-sus-distribuciones.html#cfd-pdf-e-independencia"><i class="fa fa-check"></i><b>3.1</b> CFD, PDF e Independencia</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="valores-esperados-y-funcion-indicadora.html"><a href="valores-esperados-y-funcion-indicadora.html"><i class="fa fa-check"></i><b>4</b> Valores esperados y Función indicadora</a><ul>
+<li class="chapter" data-level="4.1" data-path="valores-esperados-y-funcion-indicadora.html"><a href="valores-esperados-y-funcion-indicadora.html#valor-esperado-y-linealidad"><i class="fa fa-check"></i><b>4.1</b> Valor esperado y Linealidad</a></li>
+<li class="chapter" data-level="4.2" data-path="valores-esperados-y-funcion-indicadora.html"><a href="valores-esperados-y-funcion-indicadora.html#funcion-indicadora"><i class="fa fa-check"></i><b>4.2</b> Función Indicadora</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="valores-esperados-y-funcion-indicadora.html"><a href="valores-esperados-y-funcion-indicadora.html#varianza-y-desviacion-estandar"><i class="fa fa-check"></i><b>4.2.1</b> Varianza y desviación estándar</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="va.html"><a href="va.html"><i class="fa fa-check"></i><b>5</b> Va Continuas, LOTUS, UoU</a><ul>
+<li class="chapter" data-level="5.1" data-path="va.html"><a href="va.html#variables-aleatorias-continuas"><i class="fa fa-check"></i><b>5.1</b> Variables aleatorias continuas:</a></li>
+<li class="chapter" data-level="5.2" data-path="va.html"><a href="va.html#lotus"><i class="fa fa-check"></i><b>5.2</b> LOTUS</a></li>
+<li class="chapter" data-level="5.3" data-path="va.html"><a href="va.html#universalidad-de-la-uniforme-uou"><i class="fa fa-check"></i><b>5.3</b> Universalidad de la Uniforme (UoU)</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="momentos.html"><a href="momentos.html"><i class="fa fa-check"></i><b>6</b> Momentos y Funciones generadoras de momentos</a><ul>
+<li class="chapter" data-level="6.1" data-path="momentos.html"><a href="momentos.html#momentos-1"><i class="fa fa-check"></i><b>6.1</b> Momentos</a></li>
+<li class="chapter" data-level="6.2" data-path="momentos.html"><a href="momentos.html#funciones-generatrices-de-momentos"><i class="fa fa-check"></i><b>6.2</b> Funciones generatrices de momentos</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="pdf.html"><a href="pdf.html"><i class="fa fa-check"></i><b>7</b> PDFs y CDFs conjuntas</a><ul>
+<li class="chapter" data-level="7.1" data-path="pdf.html"><a href="pdf.html#distribuciones-conjuntas"><i class="fa fa-check"></i><b>7.1</b> Distribuciones conjuntas</a></li>
+<li class="chapter" data-level="7.2" data-path="pdf.html"><a href="pdf.html#distribuciones-condicionales"><i class="fa fa-check"></i><b>7.2</b> Distribuciones Condicionales</a></li>
+<li class="chapter" data-level="7.3" data-path="pdf.html"><a href="pdf.html#distribuciones-marginales"><i class="fa fa-check"></i><b>7.3</b> Distribuciones Marginales</a></li>
+<li class="chapter" data-level="7.4" data-path="pdf.html"><a href="pdf.html#independencia-de-variables-aleatorias"><i class="fa fa-check"></i><b>7.4</b> Independencia de Variables Aleatorias</a></li>
+<li class="chapter" data-level="7.5" data-path="pdf.html"><a href="pdf.html#lotus-multivariado"><i class="fa fa-check"></i><b>7.5</b> LOTUS multivariado</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="cov.html"><a href="cov.html"><i class="fa fa-check"></i><b>8</b> Covarianza y Transformaciones</a><ul>
+<li class="chapter" data-level="8.1" data-path="cov.html"><a href="cov.html#covarianza-y-correlacion"><i class="fa fa-check"></i><b>8.1</b> Covarianza y Correlación</a></li>
+<li class="chapter" data-level="8.2" data-path="cov.html"><a href="cov.html#transformaciones"><i class="fa fa-check"></i><b>8.2</b> Transformaciones</a></li>
+<li class="chapter" data-level="8.3" data-path="cov.html"><a href="cov.html#convoluciones"><i class="fa fa-check"></i><b>8.3</b> Convoluciones</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="poisson.html"><a href="poisson.html"><i class="fa fa-check"></i><b>9</b> Proceso de Poisson</a></li>
+<li class="chapter" data-level="10" data-path="orden.html"><a href="orden.html"><i class="fa fa-check"></i><b>10</b> Estadísticos de Orden</a></li>
+<li class="chapter" data-level="11" data-path="espercond.html"><a href="espercond.html"><i class="fa fa-check"></i><b>11</b> Esperanza Condicional</a></li>
+<li class="chapter" data-level="12" data-path="tlc.html"><a href="tlc.html"><i class="fa fa-check"></i><b>12</b> LGN, TLC</a><ul>
+<li class="chapter" data-level="12.1" data-path="tlc.html"><a href="tlc.html#ley-de-los-grandes-numero-lgn"><i class="fa fa-check"></i><b>12.1</b> Ley de los Grandes Número (LGN)</a></li>
+<li class="chapter" data-level="12.2" data-path="tlc.html"><a href="tlc.html#teorema-del-limite-central-tlc"><i class="fa fa-check"></i><b>12.2</b> Teorema del Límite Central (TLC)</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="markov.html"><a href="markov.html"><i class="fa fa-check"></i><b>13</b> Cadenas de Markov</a><ul>
+<li class="chapter" data-level="13.1" data-path="markov.html"><a href="markov.html#definicion"><i class="fa fa-check"></i><b>13.1</b> Definición</a></li>
+<li class="chapter" data-level="13.2" data-path="markov.html"><a href="markov.html#propiedades-de-los-estados"><i class="fa fa-check"></i><b>13.2</b> Propiedades de los estados</a></li>
+<li class="chapter" data-level="13.3" data-path="markov.html"><a href="markov.html#matriz-de-transicion"><i class="fa fa-check"></i><b>13.3</b> Matriz de transición</a></li>
+<li class="chapter" data-level="13.4" data-path="markov.html"><a href="markov.html#propiedades-de-la-cadena"><i class="fa fa-check"></i><b>13.4</b> Propiedades de la cadena</a></li>
+<li class="chapter" data-level="13.5" data-path="markov.html"><a href="markov.html#distribucion-estacionaria"><i class="fa fa-check"></i><b>13.5</b> Distribución Estacionaria</a></li>
+<li class="chapter" data-level="13.6" data-path="markov.html"><a href="markov.html#caminata-aleatoria-en-una-red-indirecta"><i class="fa fa-check"></i><b>13.6</b> Caminata Aleatoria en una Red Indirecta</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="distribuciones-continuas.html"><a href="distribuciones-continuas.html"><i class="fa fa-check"></i><b>14</b> Distribuciones Continuas</a><ul>
+<li class="chapter" data-level="14.1" data-path="distribuciones-continuas.html"><a href="distribuciones-continuas.html#distribucion-uniforme"><i class="fa fa-check"></i><b>14.1</b> Distribución Uniforme</a></li>
+<li class="chapter" data-level="14.2" data-path="distribuciones-continuas.html"><a href="distribuciones-continuas.html#distribucion-normal"><i class="fa fa-check"></i><b>14.2</b> Distribución Normal</a></li>
+<li class="chapter" data-level="14.3" data-path="distribuciones-continuas.html"><a href="distribuciones-continuas.html#distribucion-exponencial"><i class="fa fa-check"></i><b>14.3</b> Distribución Exponencial</a></li>
+<li class="chapter" data-level="14.4" data-path="distribuciones-continuas.html"><a href="distribuciones-continuas.html#distribucion-gamma"><i class="fa fa-check"></i><b>14.4</b> Distribución Gamma</a></li>
+<li class="chapter" data-level="14.5" data-path="distribuciones-continuas.html"><a href="distribuciones-continuas.html#distribucion-beta"><i class="fa fa-check"></i><b>14.5</b> Distribución Beta</a></li>
+<li class="chapter" data-level="14.6" data-path="distribuciones-continuas.html"><a href="distribuciones-continuas.html#distribucion-chi-cuadrado"><i class="fa fa-check"></i><b>14.6</b> Distribución Chi-Cuadrado</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="discretas.html"><a href="discretas.html"><i class="fa fa-check"></i><b>15</b> Distribuciones Discretas</a><ul>
+<li class="chapter" data-level="15.1" data-path="discretas.html"><a href="discretas.html#distribuciones-para-cuatro-esquemas-de-muestreo"><i class="fa fa-check"></i><b>15.1</b> Distribuciones para cuatro esquemas de muestreo</a></li>
+<li class="chapter" data-level="15.2" data-path="discretas.html"><a href="discretas.html#distribucion-de-bernoulli"><i class="fa fa-check"></i><b>15.2</b> Distribución de Bernoulli</a></li>
+<li class="chapter" data-level="15.3" data-path="discretas.html"><a href="discretas.html#distribucion-binomial"><i class="fa fa-check"></i><b>15.3</b> Distribución Binomial</a></li>
+<li class="chapter" data-level="15.4" data-path="discretas.html"><a href="discretas.html#distribucion-geometrica"><i class="fa fa-check"></i><b>15.4</b> Distribución Geométrica</a></li>
+<li class="chapter" data-level="15.5" data-path="discretas.html"><a href="discretas.html#distribucion-del-primer-exito"><i class="fa fa-check"></i><b>15.5</b> Distribución del Primer Éxito</a></li>
+<li class="chapter" data-level="15.6" data-path="discretas.html"><a href="discretas.html#distribucion-binomial-negativa"><i class="fa fa-check"></i><b>15.6</b> Distribución Binomial Negativa</a></li>
+<li class="chapter" data-level="15.7" data-path="discretas.html"><a href="discretas.html#distribucion-hipergeometrica"><i class="fa fa-check"></i><b>15.7</b> Distribución Hipergeométrica</a></li>
+<li class="chapter" data-level="15.8" data-path="discretas.html"><a href="discretas.html#distribucion-de-poisson"><i class="fa fa-check"></i><b>15.8</b> Distribución de Poisson</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="multi.html"><a href="multi.html"><i class="fa fa-check"></i><b>16</b> Distribuciones Multivariadas</a><ul>
+<li class="chapter" data-level="16.1" data-path="multi.html"><a href="multi.html#distribucion-multinomial"><i class="fa fa-check"></i><b>16.1</b> Distribución Multinomial</a></li>
+<li class="chapter" data-level="16.2" data-path="multi.html"><a href="multi.html#distribucion-uniforme-multivariada"><i class="fa fa-check"></i><b>16.2</b> Distribución Uniforme Multivariada</a></li>
+<li class="chapter" data-level="16.3" data-path="multi.html"><a href="multi.html#distribucion-normal-multivariada-nmv"><i class="fa fa-check"></i><b>16.3</b> Distribución Normal Multivariada (NMV)</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="props.html"><a href="props.html"><i class="fa fa-check"></i><b>17</b> Propiedades de las Distribuciones</a><ul>
+<li class="chapter" data-level="17.1" data-path="props.html"><a href="props.html#cdfs-importantes"><i class="fa fa-check"></i><b>17.1</b> CDFs Importantes</a></li>
+<li class="chapter" data-level="17.2" data-path="props.html"><a href="props.html#convoluciones-de-variables-aleatorias"><i class="fa fa-check"></i><b>17.2</b> Convoluciones de Variables Aleatorias</a></li>
+<li class="chapter" data-level="17.3" data-path="props.html"><a href="props.html#casos-especiales"><i class="fa fa-check"></i><b>17.3</b> Casos Especiales</a></li>
+<li class="chapter" data-level="17.4" data-path="props.html"><a href="props.html#desigualdades"><i class="fa fa-check"></i><b>17.4</b> Desigualdades</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="formulas.html"><a href="formulas.html"><i class="fa fa-check"></i><b>18</b> Fórmulas</a><ul>
+<li class="chapter" data-level="18.1" data-path="formulas.html"><a href="formulas.html#series-geometricas"><i class="fa fa-check"></i><b>18.1</b> Series Geométricas</a></li>
+<li class="chapter" data-level="18.2" data-path="formulas.html"><a href="formulas.html#funcion-exponencial"><i class="fa fa-check"></i><b>18.2</b> Función Exponencial</a></li>
+<li class="chapter" data-level="18.3" data-path="formulas.html"><a href="formulas.html#integrales-gamma-y-beta"><i class="fa fa-check"></i><b>18.3</b> Integrales Gamma y Beta</a></li>
+<li class="chapter" data-level="18.4" data-path="formulas.html"><a href="formulas.html#aproximacion-de-euler-a-las-sumas-armonicas"><i class="fa fa-check"></i><b>18.4</b> Aproximación de Euler a las Sumas Armónicas</a></li>
+<li class="chapter" data-level="18.5" data-path="formulas.html"><a href="formulas.html#aproximacion-de-stirling-a-los-factoriales"><i class="fa fa-check"></i><b>18.5</b> Aproximación de Stirling a los Factoriales</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="definiciones.html"><a href="definiciones.html"><i class="fa fa-check"></i><b>19</b> Definiciones Varias</a></li>
+<li class="chapter" data-level="20" data-path="ejemplos.html"><a href="ejemplos.html"><i class="fa fa-check"></i><b>20</b> Ejemplos</a><ul>
+<li class="chapter" data-level="20.1" data-path="ejemplos.html"><a href="ejemplos.html#calculando-probabilidades"><i class="fa fa-check"></i><b>20.1</b> Calculando Probabilidades</a></li>
+<li class="chapter" data-level="20.2" data-path="ejemplos.html"><a href="ejemplos.html#linealidad-e-indicadores-1"><i class="fa fa-check"></i><b>20.2</b> Linealidad e Indicadores (1)</a></li>
+<li class="chapter" data-level="20.3" data-path="ejemplos.html"><a href="ejemplos.html#linealidad-y-primeros-exitos"><i class="fa fa-check"></i><b>20.3</b> Linealidad y Primeros Éxitos</a></li>
+<li class="chapter" data-level="20.4" data-path="ejemplos.html"><a href="ejemplos.html#ordenamientos-de-variables-aleatorias-i.i.d."><i class="fa fa-check"></i><b>20.4</b> Ordenamientos de variables aleatorias i.i.d.</a></li>
+<li class="chapter" data-level="20.5" data-path="ejemplos.html"><a href="ejemplos.html#expectativa-de-una-hipergeometrica-negativa"><i class="fa fa-check"></i><b>20.5</b> Expectativa de una Hipergeométrica Negativa</a></li>
+<li class="chapter" data-level="20.6" data-path="ejemplos.html"><a href="ejemplos.html#minimo-y-maximo-de-vas"><i class="fa fa-check"></i><b>20.6</b> Mínimo y Máximo de VAs</a></li>
+<li class="chapter" data-level="20.7" data-path="ejemplos.html"><a href="ejemplos.html#emparejando-patrones-con-la-serie-de-taylor"><i class="fa fa-check"></i><b>20.7</b> Emparejando patrones con la serie de Taylor</a></li>
+<li class="chapter" data-level="20.8" data-path="ejemplos.html"><a href="ejemplos.html#la-ley-de-adan-y-eva"><i class="fa fa-check"></i><b>20.8</b> La Ley de Adán y Eva</a></li>
+<li class="chapter" data-level="20.9" data-path="ejemplos.html"><a href="ejemplos.html#fgm---encontrando-momentos"><i class="fa fa-check"></i><b>20.9</b> FGM - Encontrando Momentos</a></li>
+<li class="chapter" data-level="20.10" data-path="ejemplos.html"><a href="ejemplos.html#cadenas-de-markov-1"><i class="fa fa-check"></i><b>20.10</b> Cadenas de Markov (1)</a></li>
+<li class="chapter" data-level="20.11" data-path="ejemplos.html"><a href="ejemplos.html#cadenas-de-markov-2"><i class="fa fa-check"></i><b>20.11</b> Cadenas de Markov (2)</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="estrategias.html"><a href="estrategias.html"><i class="fa fa-check"></i><b>21</b> Estrategias de Resolución de Problemas</a></li>
+<li class="chapter" data-level="22" data-path="equivocaciones.html"><a href="equivocaciones.html"><i class="fa fa-check"></i><b>22</b> Equivocaciones Comunes</a></li>
+<li class="chapter" data-level="23" data-path="r.html"><a href="r.html"><i class="fa fa-check"></i><b>23</b> Distribuciones en R</a></li>
+<li class="chapter" data-level="24" data-path="fuentes.html"><a href="fuentes.html"><i class="fa fa-check"></i><b>24</b> Fuentes Recomendadas</a></li>
+<li class="chapter" data-level="25" data-path="dist.html"><a href="dist.html"><i class="fa fa-check"></i><b>25</b> Tabla de Distribuciones</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Hoja de Referencia de Probabilidad</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="variables-aleatorias-y-sus-distribuciones" class="section level1">
+<h1><span class="header-section-number">3</span> Variables aleatorias y sus distribuciones</h1>
+<div id="cfd-pdf-e-independencia" class="section level2">
+<h2><span class="header-section-number">3.1</span> CFD, PDF e Independencia</h2>
+<p><span class="math inline">\(\textbf{Función de probabilidad (PDF):}\)</span> Da la probabilidad que una variable <span class="math inline">\(\textit{discreta}\)</span> tiene para un valor <span class="math inline">\(x\)</span></p>
+<p><span class="math inline">\(p_X(x) = P(X=x)\)</span></p>
+<p>knitr::include_graphics(“4.png”)</p>
+<p>La PDF satisface que:
+<span class="math inline">\(p_X(x) \ge 0\)</span> y $ _{x} p_X(x) = 1$</p>
+<p><span class="math inline">\(\textbf{Funcion de distribución (CDF):}\)</span> Da la probabilidad de que una variable aleatoria sea menor o igual a <span class="math inline">\(x\)</span>.
+<span class="math inline">\(F_x(x) = P(X\le x)\)</span></p>
+<p>knitr::include_graphics(“5.png”)</p>
+<p>La CDF es una función continua y continua hacia la derecha con
+<span class="math inline">\(F_X(x) \rightarrow 0 cuando x \rightarrow - \infty\)</span> y <span class="math inline">\(F_X(x) \rightarrow 1\)</span> cuando <span class="math inline">\(x \rightarrow \infty\)</span></p>
+<p><span class="math inline">\(\textbf{Independencia:}\)</span> Intuitivamente, dos variables aleatorias son independientes si conociendo el valor de una, no se logra conocer información de la otra.
+Dos muestras de variables aleatorias discretas X y Y son independientes si para todos los valores de x y y
+<span class="math inline">\(P(X=x, Y=y) = P(X=x)P(Y=y)\)</span></p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="condicional.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="valores-esperados-y-funcion-indicadora.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["hoja_referencia_probabilidad.pdf", "hoja_referencia_probabilidad.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

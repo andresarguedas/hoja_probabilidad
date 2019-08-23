@@ -12,7 +12,7 @@ $f_{X,Y}(x,y)=\frac{\partial^2 }{\partial x \partial y} F_{X,Y}(x,y).$
 
 La PMF,PDF conjunta debe ser no negativa y sumar/integrar a 1.
 
-![](8.PNG)
+knitr::include_graphics("8.png")
 
 ## Distribuciones Condicionales
 $\textbf{Regla condicional y de Bayes para v.a. discreta}$

@@ -1,4 +1,4 @@
-# Va Continuas, LOTUS, UoU {continuas}
+# Va Continuas, LOTUS, UoU {#va}
 
 ## Variables aleatorias continuas:
 
@@ -17,7 +17,7 @@ La función de densidad es no negativa e integra a 1. Por el teorema fundamental
 
 $F(x) = \int_{-\infty}^{x} f(t) dt$
 
-![](7.PNG)
+knitr::include_graphics("7.png")
 
 Para encontrar la probabilidad de que una v.a.c. tome un valor en un intervalo, integre la PDF sobre ese intervalo 
 
