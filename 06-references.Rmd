@@ -15,6 +15,7 @@ $\textbf{La correlación}$ es una versión estandarizada de la covarianza que si
 $Corr(X,Y)=\frac{Cov(X,Y)}{\sqrt{Var(X)Var(Y)}}$
 
 $\textbf{Covarianza e Independencia}$
+
 Si dos variables aleatorias son independientes, entonces no se correlacionan. El inverso no siempre es cierto. (e.j., considere $X~N(0,1)$ y $Y=X^2$).
 
 $X \perp Y \longrightarrow Cov(X,Y) = 0 \longrightarrow E(XY) = E(X)E(Y)$

@@ -15,6 +15,7 @@ La PMF,PDF conjunta debe ser no negativa y sumar/integrar a 1.
 ![](8.PNG)
 
 ## Distribuciones Condicionales
+
 $\textbf{Regla condicional y de Bayes para v.a. discreta}$
 
 $P(Y=y|X=x)= \frac{P(X=x, Y=y)}{P(X=x)}=\frac{P(X=x|Y=y)P(Y=y)}{P(X=x)}$

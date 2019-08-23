@@ -3,6 +3,7 @@
 ## Variables aleatorias continuas:
 
 $\textbf{¿Cual es la probabilidad de que una v.a.c. este en un intervalo?}$ Utilice la diferencia entre la funciones de distribución.
+
 $P(a\le X \le b) = P(X \le b) - P(X \le a) = F_X(b)-F_X(a)$
 
 Para $X \sim N(\mu, \sigma^2)$, esto se convierte en

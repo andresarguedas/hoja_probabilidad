@@ -1,5 +1,6 @@
 # Tabla de Distribuciones {#dist}
 
+
 | Distribución   |   PMF/PDF y Dominio    |   Valor Esperado  | Varianza  | FGM |
 |----------------|------------------------|-------------------|-----------|-----|
 | Bernoulli. $Bern(p)$ | $P(X=1)=p$. $P(X=0)=q=1-p$ | $p$ | $pq$ | $q+pe^t$  |  

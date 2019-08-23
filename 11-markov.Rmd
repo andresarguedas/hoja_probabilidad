@@ -41,6 +41,7 @@ Ejemplos de cadenas reversibles incluyen cualquier cadena con $q_{ij}=q_{ji}$, c
 
 
 ## Distribución Estacionaria
+
 Digamos que el vector $\vec{s}=(s_1, s_2,...,s_M)$ es una PMF (escrito como un vector fila). Le diremos $\textbf{distribución estacionaria}$ de la cadena a $\vec{s}$  si $\vec{s}Q=\vec{s}$. Como consecuencia, si $X_t$ tiene la distribución  estacionaria, entonces todas las futuras $X_{t+1}, X_{t+2},...$ tienen la distribución estacionaria.
 Para cadenas irreducibles y aperiódicas, la distribución estacionaria existe, es única y $s_i$ es la probabilidad a largo plazo de que una cadena este en el estado $i$. El número esperado de pasos para volver a $i$ empezando en $i$ es $1/s_i$.
 Para encontrar la distribución estacionaria, también puede resolver la ecuación matricial $(Q' - I)\vec{s}' =0$. La distribución estacionaria es uniforme si las columnas de $Q$ suman 1.

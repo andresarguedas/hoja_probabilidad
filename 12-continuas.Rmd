@@ -9,6 +9,7 @@ $\textbf{Propiedades de la Uniforme}$: Para una distribución Uniforme, la proba
 $\textbf{Ejemplo:}$ William tira dardos muy mal, entonces sus dardos se encuentran distribuciones uniformemente en toda la habitación porque es igualmente posible que aparezcan en cualquier lugar. Los dardos de William tienen una distribución Uniforme en la superficie de la habitación. La Uniforme es la única distribución donde la probabilidad de una región específica es proporcional al largo/área/volumen de esa región, y la densidad de ocurrencia en cualquier punto es constante en todo el dominio.
 
 ## Distribución Normal
+
 Digamos que X se distribuye $N(\mu, \sigma ^2)$. Sabemos lo siguiente:
 
 $\textbf{Teorema del Límite Central:}$ La distribución Normal es ubicua gracias al Teorema del Límite Central, el cual dice que la media muestral de v.a.s que son i.i.d. va a aproximar una distribución Normal conforme el tamaño de la muestra crezca, sin importar la distribución inicial.
@@ -20,6 +21,7 @@ $Z=\frac{X-\mu}{\sigma}\sim N(0,1)$
 $\textbf{Normal Estándar:}$ La Normal Estándar, $Z$~$N(0,1)$, tiene media 0 y varianza 1. SU CDF se denota con $\Phi$.
 
 ## Distribución Exponencial
+
 Digamos que X se distribuye $Expo(\lambda)$. Sabemos lo siguiente:
 
 $\textbf{Historia:}$ Usted está sentado en un campo abierto justo antes del amanecer, deseando que los aviones en el cielo de la noche lanzaran estrellas fugaces, porque le serviría mucho un deseo en este momento. Usted sabe que las estrellas fugaces llegan cada 15 minutos en promedio, pero una estrella fugaz no "tiene que" venir solo porque usted espero mucho tiempo. Su tiempo de espera "no tiene memoria"; el tiempo adicional hasta la siguiente estrella fugaz llegue no depende en el tiempo que usted haya esperado. 

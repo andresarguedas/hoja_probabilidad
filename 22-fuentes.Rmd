@@ -1,5 +1,6 @@
 # Fuentes Recomendadas {#fuentes}
 
+
 $\bullet$ Libro Introducción a la Probabilidad (http://bit.ly/introprobability)
 
 $\bullet$ Stat 110 Online (http://stat110.net)

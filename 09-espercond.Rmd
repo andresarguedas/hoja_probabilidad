@@ -17,6 +17,7 @@ $\bullet$ Sea $T$~$Expo(1/10)$ el tiempo que debe esperar hasta que el bus llegu
 
 
 $\textbf{Condicionando con una variable aleatoria}$
+
 También podemos encontrar $E(Y|X)$, el valor esperado de $Y$ dada la variable aleatoria $X$. Esto es un $\text{función de la variable aleatoria X}$. Esto $no$ es un número excepto en algunos casos específicos como si $X \perp Y$. Para encontrar $E(Y|X)$, encuentre $E(Y|X=x)$ y luego sustituya $X$ por $x$. Por ejemplo:
 $\bullet$ Si $E(Y|X=x)=x^3+5x$, entonces $E(Y|X)=X^3+5X$.
 $\bullet$ Sea $Y$ el número de éxitos en 10 pruebas independientes de Bernoulli con probabilidad de éxito $p$ y sea $X$ el número de éxitos en las primeras 3 pruebas. Entonces $E(Y|X)=X+7p$

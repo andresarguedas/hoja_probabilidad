@@ -6,6 +6,7 @@ Digamos que usted tiene $n$ v.a. $X_1, X_2,...,X_n$ i.i.d. Si lo ordenamos de me
 Note que los estadísticos de orden son $dependientes$, e.j. conociendo $X_{(4)}=42$ da la información de que $X_{(1)}, X_{(2)}, X_{(3)}$ son $\leq 42$ y $X_{(5)}, X_{(6)},...,X_{(n)}$ son $\ge 42$. 
 
 $\textbf{Distribución}$
+
 Tomando $n$ variables aleatorias i.i.d. $X_{1}, X_2,...,X_n$ con CDF $F(x)$ y PDF $f(x)$, la CDF y la PDF de $X_{(i)}$ son:
 
 $F_{X_{(i)}}(x) = P(X_{(i)}\le x)=\displaystyle\sum_{k=i}^{n} \binom{n}{k} F(x)^k (1-F(x))^{n-k}$

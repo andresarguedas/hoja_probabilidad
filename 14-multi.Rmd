@@ -1,6 +1,7 @@
 # Distribuciones Multivariadas {#multi}
 
 ## Distribución Multinomial
+
 Digamos que el vector $\vec{X}=(X_1, X_2,X_3,...,X_k)\sim Mult_k(n,\vec{p})$ donde $\vec{p}=(p_1,p_2,...,p_k)$.
 
 $\textbf{Historia:}$ Tenemos $n$ ítems, los cuales pueden caer en cualquiera de las $k$ canastas independientemente con probabilidades $\vec{p}=(p_1,p_2,...,p_k)$.

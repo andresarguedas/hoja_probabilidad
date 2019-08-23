@@ -116,6 +116,7 @@ $P(X=x, Y=y) = P(X=x)P(Y=y)$
 ## Valor esperado y Linealidad
 $\textbf{Valor esperado:}$ (media, expectativa o promedio) es un promedio ponderado de los posibles resultados de nuestra variable aleatoria.
 Matemáticamente, si $x_1, x_2, x_3,...$ son todos los distintos valores posibles que $X$ puede tomar, entonces el valor esperado de $X$ es
+
 $E(X) = \sum_{i} x_iP(X=x_i)$
 
 ![](6.PNG)

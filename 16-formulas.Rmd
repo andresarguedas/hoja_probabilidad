@@ -1,6 +1,7 @@
 # Fórmulas {#formulas}
 
 ## Series Geométricas
+
 $1 + r + r^2 +...+r^{n-1}=\displaystyle\sum_{n=0}^{\infty}r^k=\frac{1-r^n}{1-r}$
 
 $1+r+r^2+...=\frac{1}{1-r}$ si $|r|<1$

@@ -16,7 +16,9 @@ $\textbf{Curtosis:} Kurt(X)=m_4-3$
 
 ## Funciones generatrices de momentos
 $\textbf{FGM:}$ Para cualquier variable X, la función
+
 $M_X(t) = E(e^{tX)}$
+
 es la $\textbf{funcion generatriz de momentos}$ de X, si existe para cualquier valor de $t$ en un intervalo abierto que contiene a 0. La variable $t$ también podría haberse llamado $u$ o $v$. Es una herramienta  de registro que nos deja trabajar con la función $función$ $M_X$ en lugar de la $secuencia$ de momentos.
 
 $\textbf{¿Por qué se llama la función generatriz de momentos?}$ 

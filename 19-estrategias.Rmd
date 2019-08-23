@@ -2,6 +2,7 @@
 
 Contribuciones de Jessy Hwang, Yuan Jiang y Yuqi Hou
 
+
 1. $\textbf{Para empezar.}$ Empiece $\textit{definiendo los eventos relevantes y las variables aleatorias}$("Sea Y el evento donde escojo la moneda justa"; "Sea X el numero de éxitos"). Una noción clara es importante para lograr pensar con claridad. Luego decida que es lo que debe encontrar, en términos de su notación ("Quiero encontrar $P(X=3|A)$"). Piense qué tipo de objeto debería ser su respuesta (un número, variable aleatoria, PMF, PDF, etc.) y en términos de que debería estar.
 $\textit{Intente casos simples y extremos.}$ Para convertir un experimento abstracto en algo más concreto, intente $\textit{dibujar una imagen}$ o inventar números que podrían haber sucedido. Reconocimiento de patrones: ¿la estructura del problema se parece a algo que ha visto antes?
 

@@ -2,6 +2,7 @@
 
 Contribuciones de Jessy Hwang
 
+
 1. $\textbf{No utilice incorrectamente la definición simple de probabilidad.}$ Cuando conteste "¿cuál es la probabilidad de que en un grupo de 3 personas, ningún par haya nacido en el mismo mes?", $\textit{no}$ es correcto tratar a las personas como bolas indistinguibles que se colocan en 12 cajas, ya que eso asume que la lista de meses {Enero, Enero, Enero} es igual de probable que la lista {Enero, Abril, Junio}, aunque la segunda es seis veces mas probable.
 
 2. $\textbf{No confunda incondicional, condicional y probabilidades conjuntas.}$ Al aplicar $P(A|B)=\frac{P(A|B)P(A)}{P(B)}$ $\textit{no}$ es correcto decir "P(B) = 1 porque B ya ocurrió"; P(B) es la probabilidad $\textit{previa}$ de B. No confunda P(A|B) con P(A,B).

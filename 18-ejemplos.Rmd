@@ -97,6 +97,7 @@ Para mostrar que la cadena es reversible con respecto a $\vec{s}$, debemos mostr
 $s_0q_{01}=\frac{\alpha \beta }{\alpha + \beta}=s_1q_{10}$
 
 ## Cadenas de Markov (2)
+
 William y Sebastian están jugando un juego modificado de Catan, donde en cada turno mueven aleatoriamente un ladrón (el cual empieza en el cuadro del centro) a uno de los hexágonos adyacentes.
 
 ![](15.PNG)
