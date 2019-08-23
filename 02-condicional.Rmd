@@ -44,7 +44,7 @@ $P(A\cup B \cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A \cap C) - P(B \cap C)
 
 ## La paradoja de Simpson:
 
-knitr::include_graphics("3.png")
+![](3.PNG)
 
 Es posible tener $P(A|B,C) < P(A|B^{c},C)$ y $P(A|B,C^c) < P(A|B^c,C^c)$ pero también $P(A|B) > P(A|B^c)$
 
@@ -93,7 +93,7 @@ $\textbf{Función de probabilidad (PDF):}$ Da la probabilidad que una variable $
 
 $p_X(x) = P(X=x)$
 
-knitr::include_graphics("4.png")
+![](4.PNG)
 
 La PDF satisface que:
 $p_X(x) \ge 0$ y $ \displaystyle\sum_{x} p_X(x) = 1$
@@ -101,7 +101,7 @@ $p_X(x) \ge 0$ y $ \displaystyle\sum_{x} p_X(x) = 1$
 $\textbf{Funcion de distribución (CDF):}$ Da la probabilidad de que una variable aleatoria sea menor o igual a $x$.
 $F_x(x) = P(X\le x)$
 
-knitr::include_graphics("5.png")
+![](5.PNG)
 
 La CDF es una función continua y continua hacia la derecha con
 $F_X(x) \rightarrow 0 cuando x \rightarrow  - \infty$ y $F_X(x) \rightarrow 1$ cuando $x \rightarrow \infty$
@@ -118,7 +118,7 @@ $\textbf{Valor esperado:}$ (media, expectativa o promedio) es un promedio ponder
 Matemáticamente, si $x_1, x_2, x_3,...$ son todos los distintos valores posibles que $X$ puede tomar, entonces el valor esperado de $X$ es
 $E(X) = \sum_{i} x_iP(X=x_i)$
 
-knitr::include_graphics("6.png")
+![](6.PNG)
 
 $\textbf{Linealidad:}$ Para cualquier muestra de variables aleatorias $X$ y $Y$, y las constantes $a,b,c$,
 $E(aX +bY+c) = aE(X) + bE(Y) +c$

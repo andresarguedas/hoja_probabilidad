@@ -46,7 +46,7 @@ $\textbf{Max de una Expo:}$ Si tenemos $X_i$~$Expo(\lambda)$ i.i.d., entonces $m
 
 ## Distribución Gamma
 
-knitr::include_graphics("12.png")
+![](12.PNG)
 
 Digamos que X se distribuye $Gamma(\alpha,\lambda)$. Sabemos lo siguiente:
 
@@ -57,7 +57,7 @@ $\textbf{Ejemplo:}$ Usted está en un banco y hay 3 personas delante suyo. El ti
 
 ## Distribución Beta
 
-knitr::include_graphics("13.png")
+![](13.PNG)
 
 $\textbf{Previa Conjugada para la Binomial: }$ En la aproximación Bayesiana a la Estadística, los parámetros son vistos como variables aleatorias para reflejar la incertidumbre. La $\textit{previa}$ para un parámetro es su distribución antes de observar los datos. La $\textit{posterior}$ es la distribución para el parámetro después de observar los datos. La distribución Beta es una previa $\textit{conjugada}$ para la Binomial porque su usted tiene una previa Beta para $p$ en una Binomial, entonces la distribución posterior también se distribuye Beta. Considere el siguiente modelo de dos niveles:
 

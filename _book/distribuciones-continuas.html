@@ -24,7 +24,7 @@
 <meta name="author" content="Andrea Vargas" />
 
 
-<meta name="date" content="2019-08-22" />
+<meta name="date" content="2019-08-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -230,14 +230,14 @@
 </div>
 <div id="distribucion-gamma" class="section level2">
 <h2><span class="header-section-number">14.4</span> Distribución Gamma</h2>
-<p>knitr::include_graphics(“12.png”)</p>
+<p><img src="12.PNG" /></p>
 <p>Digamos que X se distribuye <span class="math inline">\(Gamma(\alpha,\lambda)\)</span>. Sabemos lo siguiente:</p>
 <p><span class="math inline">\(\textbf{Historia:}\)</span> Usted está sentado esperando estrellas fugaces, donde el tiempo de espera se distribuye <span class="math inline">\(Expo(\lambda)\)</span>. Quiere ver <span class="math inline">\(n\)</span> estrellas fugaces antes de irse a casa. El tiempo total de espera para la <span class="math inline">\(n-ésima\)</span> estrella fugaz es <span class="math inline">\(Gamma(n,\lambda)\)</span>.</p>
 <p><span class="math inline">\(\textbf{Ejemplo:}\)</span> Usted está en un banco y hay 3 personas delante suyo. El tiempo de atención para cada persona es Exponencial con media de 2 minutos. Solo una persona puede ser atendida a la vez. La distribución del tiempo de espera hasta que sea su turno es <span class="math inline">\(Gamma(3,\frac{1}{2})\)</span>.</p>
 </div>
 <div id="distribucion-beta" class="section level2">
 <h2><span class="header-section-number">14.5</span> Distribución Beta</h2>
-<p>knitr::include_graphics(“13.png”)</p>
+<p><img src="13.PNG" /></p>
 <p><span class="math inline">\(\textbf{Previa Conjugada para la Binomial: }\)</span> En la aproximación Bayesiana a la Estadística, los parámetros son vistos como variables aleatorias para reflejar la incertidumbre. La <span class="math inline">\(\textit{previa}\)</span> para un parámetro es su distribución antes de observar los datos. La <span class="math inline">\(\textit{posterior}\)</span> es la distribución para el parámetro después de observar los datos. La distribución Beta es una previa <span class="math inline">\(\textit{conjugada}\)</span> para la Binomial porque su usted tiene una previa Beta para <span class="math inline">\(p\)</span> en una Binomial, entonces la distribución posterior también se distribuye Beta. Considere el siguiente modelo de dos niveles:</p>
 <p><span class="math inline">\(X|p\sim Bin(n,p)\)</span></p>
 <p><span class="math inline">\(p\)</span>~<span class="math inline">\(Beta(a,b)\)</span></p>

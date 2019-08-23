@@ -24,7 +24,7 @@
 <meta name="author" content="Andrea Vargas" />
 
 
-<meta name="date" content="2019-08-22" />
+<meta name="date" content="2019-08-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -206,7 +206,7 @@ Tenemos un <span class="math inline">\(\textbf{Proceso de Poisson}\)</span> de g
 <li>Los números de llegadas en intervalos de tiempo disjuntos son independientes.</li>
 </ol>
 <p>Por ejemplo, los números de llegadas en los intervalos de tiempo <span class="math inline">\([0,5], (5,12)\)</span> y <span class="math inline">\([13,23)\)</span> son independientes con distribuciones <span class="math inline">\(Pois(5\lambda), Pois(7\lambda), Pois(10\lambda)\)</span> respectivamente.</p>
-<p>knitr::include_graphics(“9.png”)</p>
+<p><img src="9.PNG" /></p>
 <p><span class="math inline">\(\textbf{Dualidad Tiempo-Conteo}\)</span>
 Considere un proceso de Poisson de correos llegando a una bandeja de entrada a un ritmo de <span class="math inline">\(\lambda\)</span> correos por hora. Sea <span class="math inline">\(T_n\)</span> el tiempo de llegada de el <span class="math inline">\(n- ésimo\)</span> correo (relativo a un tiempo de inicio 0) y sea <span class="math inline">\(N_t\)</span> el numero de correos que llegan en <span class="math inline">\([0,t]\)</span>. Encontremos la distribución de <span class="math inline">\(T_1\)</span>. El evento <span class="math inline">\(T_1&gt;1\)</span>, el evento en el que se tiene que esperar más de <span class="math inline">\(t\)</span> horas para recibir el primer correo, es el mismo evento que <span class="math inline">\(N_t = 0\)</span>, es decir, el evento en el que no hay correos en las primeras <span class="math inline">\(t\)</span> horas. Entonces</p>
 <p><span class="math inline">\(P(T_1 &gt; t) = P(N_t = 0)=e^{-\lambda t} \longrightarrow P(T_1 \leq t) = 1-e^{-\lambda t}\)</span></p>

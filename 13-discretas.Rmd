@@ -18,7 +18,7 @@ $\textbf{Ejemplo:}$ Sea X el indicado de Caras al tirar una moneda justa. Entonc
 
 ## Distribución Binomial
 
-knitr::include_graphics("14.png")
+![](14.PNG)
 
 Digamos que X se distribuye $Bin(n,p)$. Sabemos lo siguiente:
 

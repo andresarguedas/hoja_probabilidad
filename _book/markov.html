@@ -24,7 +24,7 @@
 <meta name="author" content="Andrea Vargas" />
 
 
-<meta name="date" content="2019-08-22" />
+<meta name="date" content="2019-08-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -201,7 +201,7 @@
 <h1><span class="header-section-number">13</span> Cadenas de Markov</h1>
 <div id="definicion" class="section level2">
 <h2><span class="header-section-number">13.1</span> Definición</h2>
-<p>knitr::include_graphics(“10.png”)</p>
+<p><img src="10.PNG" /></p>
 <p>Una Cadena de Markov es una caminata aleatoria en un espacio de estados, el cual asumimos que es finito, digamos {<span class="math inline">\(1,2,...,M\)</span>}.Decimos que <span class="math inline">\(X_t\)</span> denota cual elemento del espacio de estados de la caminata es visitado en el tiempo <span class="math inline">\(t\)</span>. La Cadena de Markov es la secuencia de variables aleatorias que rastrean donde está la caminata en todos los puntos del tiempo, <span class="math inline">\(X_0, X_1, X_2,...\)</span>. Por definición una Cadena de Markov tiene que cumplir con la <span class="math inline">\(\textbf{propiedad de Markov}\)</span>, la cual dice que si usted quiere predecir donde la cadena va a estar en el futuro, si conocemos en estado presente entonces toda la historia pasada es irrelevante. <span class="math inline">\(\textit{Dado el presente, el pasado y futuro son condicionalmente independientes}\)</span>. En símbolos,
 <span class="math inline">\(P(X_{n+1}=j|X_0=i_0, X_1=i_1,...,X_n=i)=P(X_{n+1}=j|X_n=i)\)</span></p>
 </div>
@@ -238,7 +238,7 @@ Para encontrar la distribución estacionaria, también puede resolver la ecuaci�
 </div>
 <div id="caminata-aleatoria-en-una-red-indirecta" class="section level2">
 <h2><span class="header-section-number">13.6</span> Caminata Aleatoria en una Red Indirecta</h2>
-<p>knitr::include_graphics(“11.png”)</p>
+<p><img src="11.PNG" /></p>
 <p>Si usted tiene una colección de <span class="math inline">\(\textbf{nodos}\)</span>, de los cuales los pares se pueden conectar con <span class="math inline">\(vérticess\)</span> indirectos, y una cadena de Markov consiste en ir de un nodo actual a un nodo uniformemente aleatorio conectado a este con un vértice, eso es una caminata aleatorio en una red indirecta. La distribución estacionaria de una cadena es proporcional a la secuencia de grado (es la secuencia de grados, donde el grado de un nodo es cuantos vértices están unidos a este). Por ejemplo, la distribución estacionaria de una caminata aleatoria en una red mostrada arriba es proporcional a <span class="math inline">\((3,3,2,4,2)\)</span>, y también <span class="math inline">\((\frac{3}{14},\frac{3}{14},\frac{3}{14},\frac{4}{14}, \frac{2}{14})\)</span>.</p>
 
 </div>

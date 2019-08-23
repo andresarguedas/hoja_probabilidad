@@ -5,11 +5,14 @@
 
 Supongamos que se tiene un experimento compuesto (experimento con múltiples componentes). Si el primer componente tiene $n_1$ posibles resultados, el 2<sup>do</sup> tiene $n_2$ posibles resultados, ... , y el r-ésimo componente tiene $n_r$ posibles resultados, entonces hay $n_1*n_2*\dots*n_r$ posibilidades para el experimento completo.
 
-knitr::include_graphics("1.png")
+
+![](1.PNG)
+
 
 ## Espacio muestral
 
-knitr::include_graphics("2.png")
+![](2.PNG)
+
 
 Contiene el número de posibles muestras de tamaño $k$ de una población de tamaño $n$, bajo varios supuestos sobre como fue recolectada la muestra.
 
