@@ -2,6 +2,7 @@
 
 
 $\textbf{Condicionando con un Evento}$
+
 Podemos encontrar $E(Y|A)$, el valor esperado de $Y$ dado que un evento $A$ ocurrió. Un caso muy importante es cuando $A$ es el evento $X=x$. Note que $E(Y|A)$ es un $número$. Por ejemplo:
 $\bullet$ El Valor esperado de una tirada de un dado justo, dado que es primo, es $\frac{1}{3}*2+\frac{1}{3}*3+\frac{1}{3}*5=\frac{10}{3}$
 $\bullet$ Sea $Y$ el número de éxitos en 10 pruebas independientes de Bernoulli con probabilidad $p$ de éxito. Sea $A$ el evento de que las primeras 3 pruebas sean éxitos. Entonces

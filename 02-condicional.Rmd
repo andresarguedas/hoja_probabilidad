@@ -114,6 +114,7 @@ $P(X=x, Y=y) = P(X=x)P(Y=y)$
 # Valores esperados y Función indicadora
 
 ## Valor esperado y Linealidad
+
 $\textbf{Valor esperado:}$ (media, expectativa o promedio) es un promedio ponderado de los posibles resultados de nuestra variable aleatoria.
 Matemáticamente, si $x_1, x_2, x_3,...$ son todos los distintos valores posibles que $X$ puede tomar, entonces el valor esperado de $X$ es
 
@@ -131,6 +132,7 @@ $\textbf{Valor esperado condicional:}$ se define como un valor esperado pero con
 $E(X|A)= \sum_{x} x P(X=x|A)$
 
 ## Función Indicadora
+
 $\textbf{Función indicadora:}$ es una variable aleatoria que toma los valores 1 o 0. Es el indicador de un evento: si el evento ocurre, el indicador es 1; de otra forma es 0. Son útiles para muchos problemas de contar cuantos eventos de un tipo ocurren. 
 $I_A= \left \{ \begin{matrix} 1 & \mbox{si }A\mbox{ ocurre}\\ 0 & \mbox{si }A\mbox{ no ocurre}\end{matrix}\right.$
 

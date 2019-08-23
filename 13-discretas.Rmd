@@ -10,11 +10,13 @@
 
 
 ## Distribución de Bernoulli
+
 La distribución de Bernoulli es el caso más simple de la distribución Binomial, donde solo se tiene un ensayo (n=1). Digamos que X se distribuye $Bern(p)$. Sabemos lo siguiente:
 
 $\textbf{Historia:}$ Un ensayo es realizado con la probabilidad $p$ de "éxito", y X es el indicador de ese éxito: 1 significa éxito y 0 fracaso.
 
 $\textbf{Ejemplo:}$ Sea X el indicado de Caras al tirar una moneda justa. Entonces $X \sim Bern(\frac{1}{2})$. También, $1 - X \sim Bern(\frac{1}{2})$ es el indicador de Cruz.
+
 
 ## Distribución Binomial
 
@@ -43,6 +45,7 @@ $\bullet \textbf{Relacion Binomial-Normal:}Bin(n,p)$ es aproximadamente $N(np,np
 
 
 ## Distribución Geométrica
+
 Digamos que X se distribuye $Geom(p)$. Sabemos lo siguiente:
 
 $\textbf{Historia:}$ X es el numero de "fracasos" que vamos a obtener antes de obtener nuestro primer éxito. Nuestros éxitos tienen probabilidad $p$.
@@ -51,16 +54,21 @@ $\textbf{Ejemplo:}$ Si cada pokebola que tiramos tiene una probabilidad $\frac{1
 
 
 ## Distribución del Primer Éxito
+
 Es equivalente a la distribución Geométrica, excepto que incluye el primer éxito en la cuenta. Esto es una unidad mas que el número de fracasos. Si $X \sim FS(p)$ entonces $E(X)=1/p$.
 
+
 ## Distribución Binomial Negativa
+
 Digamos que X se distribuye $NBin(r,p)$. Sabemos lo siguiente:
 
 $\textbf{Historia:}$ X es el número de "fracasos" que tenemos antes de obtener nuestro $r-ésimo$ éxito. Nuestros éxitos tiene probabilidad p.
 
 $\textbf{Ejemplo:}$ El Impactrueno tiene una precisión de 60% y puede hacer desmayar a un Raticate salvaje en 3 golpes. El número da fallos antes de que Pikachu logre derrotar a Raticate con un Impactrueno esta distribuido $NBin(3,0.6)$.
 
+
 ## Distribución Hipergeométrica
+
 Digamos que X se distribuye $HGeom(w,b,n)$. Sabemos lo siguiente:
 
 $\textbf{Historia:}$ En una población de $w$ objetos deseados y $b$ objetos no deseados, X es el número de "éxitos" que vamos a tener al sacar $n$ objetos, sin reemplazo. Sacar los $n$ objetos se asume que es una $\textbf{muestra simple al azar}$ (todos los $n$ objetos son igual de probables).
@@ -77,7 +85,9 @@ $\bullet$ Si usted tiene $w$ bolas blancas y $b$ bolas negras y saca $n$ bolas s
 
 $\bullet \textbf{Captura y Recaptura:}$ Un bosque tiene $N$ alces, usted captura $n$ de ellos, los marca y luego los libera. Luego vuelve a recapturar una nueva muestra de tamaño $m$. ¿Cuantos alces marcados hay en la nueva muestra $HGeom(n,N-n,m)$.
 
+
 ## Distribución de Poisson
+
 Digamos que X se distribuye $Poi(\lambda)$. Sabemos lo siguiente:
 
 $\textbf{Historia:}$ Hay eventos raros (eventos con bajas probabilidades) que ocurren de muchas formas (altas posibilidades de ocurrencia) a un ritmo de $\lambda$ ocurrencias por unidad de espacio o tiempo. El número de eventos que ocurren en esa unidad de espacio o tiempo es X.

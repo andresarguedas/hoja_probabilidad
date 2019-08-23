@@ -1,5 +1,6 @@
 # Propiedades de las Distribuciones {#props}
 
+
 ## CDFs Importantes
 
 $\textbf{Normal Estandar}=\Phi$
@@ -9,6 +10,7 @@ $\textbf{Exponencial}(\lambda)= F(x)=1-e^{-\lambda x}$, para $x \in (0, \infty)$
 $\textbf{Uniforme(0,1)}=F(x)=x$ para $x \in (0,1)$
 
 ## Convoluciones de Variables Aleatorias
+
 La convolución de $n$ variables aleatorias es simplemente su suma. Para los siguientes resultados, X y Y son $\textit{independientes}$.
 
 1. $X \sim Pois(\lambda_1), Y\sim Pois(\lambda_2) \longrightarrow X+Y \sim Pois(\lambda_1 + \lambda_2)$
@@ -22,6 +24,7 @@ La convolución de $n$ variables aleatorias es simplemente su suma. Para los sig
 5. $X \sim N(\mu_1, \sigma_1^2), Y\sim N(\mu_2, \sigma_2^2) \longrightarrow X+Y\sim N(\mu_1+\mu_2, \sigma_1 ^2+\sigma_2 ^2)$
 
 ## Casos Especiales 
+
 1.$Bin(1,p)\sim Bern(p)$
 
 2.$Beta(1,1) \sim Unif(0,1)$
@@ -33,6 +36,7 @@ La convolución de $n$ variables aleatorias es simplemente su suma. Para los sig
 5.$NBin(1,p)\sim Geom(p)$
 
 ## Desigualdades 
+
 1.$\textbf{Cauchy-Schwarz}$ $|E(XY)| \le \sqrt{E(X^2)E(Y^2)}$
 
 2.$\tetxbf{Markov}$ $P(X \ge a) \le \frac{E|X|}{a}$ para a > 0

@@ -1,5 +1,6 @@
 # Va Continuas, LOTUS, UoU {#va}
 
+
 ## Variables aleatorias continuas:
 
 $\textbf{¿Cual es la probabilidad de que una v.a.c. este en un intervalo?}$ Utilice la diferencia entre la funciones de distribución.

@@ -20,6 +20,7 @@ $Z=\frac{X-\mu}{\sigma}\sim N(0,1)$
 
 $\textbf{Normal Estándar:}$ La Normal Estándar, $Z$~$N(0,1)$, tiene media 0 y varianza 1. SU CDF se denota con $\Phi$.
 
+
 ## Distribución Exponencial
 
 Digamos que X se distribuye $Expo(\lambda)$. Sabemos lo siguiente:

@@ -1,5 +1,6 @@
 # Definiciones Varias {#definiciones}
 
+
 $\textbf{Medianas y Cuantiles:}$ 
 Digamos que X tiene CDF $F$. Entonces X tiene una mediana $m$ si $F(m) \ge 0.5$ y $P(X \ge m) \ge0.5$. Para X continua, $m$ satisface $F(m)=1/2$. En general, el $a-esimo$ cuantil de X es mín{$x:F(x)\ge a$}; la mediana es el caso $a=1/2$.
 

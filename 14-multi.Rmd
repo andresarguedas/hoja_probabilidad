@@ -21,9 +21,11 @@ $\textbf{Varianza y Covarianzas:}$ Tenemos $X_i \sim Bin(n,p_i)$ marginalmente, 
 
 
 ## Distribución Uniforme Multivariada
+
 Vea la distribución Uniforme univariada para historias y ejemplos. Para la Uniforme 2D en una región cualquiera, la probabilidad es proporcional a su área. Todos los puntos en el dominio tiene igual densidad, de valor $\frac{1}{\text{área de la región}}$. Para la Uniforme 3D, la probabilidad es proporcional a su volumen. 
 
 ## Distribución Normal Multivariada (NMV)
+
 Un vector $\vec{X}=(X_1, X_2, ..., X_k)$ es una Normal Multivariada si cada combinación lineal esta Normalmente distribuida, e.j. $t_1X_1 + t_2 X_2 + ...+t_kX_k$ es Normal para cualquier constantes $t_1, t_2,...,t_k$. Los parámetros de la Normal Multivariada son el $\textbf{vector de medias}$ $\vec{\mu}=(\mu_1 \mu_2,...,\mu_k)$ y la $\textbf{matriz de covarianza}$ donde la entrada $(i,j)$ es $Cov(X_i,X_j)$.
 
 $\textbf{Propiedades:}$ La Normal Multivariada tiene la siguientes propiedades

@@ -22,4 +22,5 @@ ___________________________________________________________
 | dt(x,n)             | PDF $f(x)$ para $X \sim t_n$ |
 | dunif(x,a,b)        | PDF $f(x)$ para $X \sim Unif(a,b)$ |
 
+
 La tabla anterior da comandos de R para trabajar con distribuciones conocidas. Comandos análogos a $pbinom,qbinom$ y $rbinom$ funcionan para las otras distribuciones de la tabla. Por ejemplo, $pnorm, qnorm$ y $rnorm$ pueden usarse para obtener la CDF, cuantiles y generación aleatoria para una Normal. Para la Multinomial, $dmultinom$ puede usarse para calcular la PMF conjunta y $rmulinom$ para generar vectores aleatorios. Para la Normal Multivariada, después de instalar y cargar el paquete $mvtnorm$, $dmvnorm$ puede usarse para calcular la PDF conjunta y $rmvnorm$ para generar vectores aleatorios.

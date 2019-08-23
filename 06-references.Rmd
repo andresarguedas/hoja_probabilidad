@@ -2,6 +2,7 @@
 
 
 ## Covarianza y Correlación 
+
 $\textbf{La covarianza}$ es el análogo de la varianza para dos variables aleatorias.
 
 $Cov(X,Y)=E((X-E(X))(Y-E(Y)))=E(XY)-E(X)E(Y)$
@@ -52,6 +53,7 @@ Para cualquier constantes a,b,c,d con a y c diferentes a 0,
 $Corr(aX +b,cY+d)=Corr(X,Y)$
 
 ## Transformaciones
+
 $\textbf{Transformaciones de una variable}$
 Digamos que tenemos una variable aleatoria $X$ con PDF $f_X(x)$, pero también estamos interesados en una función de $X$. Le decimos a esta función $Y=g(X)$. También digamos que $y=g(x)$. Si $g$ es diferenciable y estrictamente creciente o estrictamente decreciente, entonces la PDF de Y es
 
@@ -73,6 +75,7 @@ $\begin{Vmatrix} a & b \\ c & d\end{Vmatrix}= |ad - bc|$
 
 
 ## Convoluciones
+
 $\textbf{Integral de convolución}$ 
 SI usted quiere encontrar la PDF de la suma de dos v.a.c. X y Y, puede hacer la siguiente integral:
 $f_{X+Y}(t)= \displaystyle\int_{-\infty}^{\infty}f_X(x)f_Y(t-x)dx$

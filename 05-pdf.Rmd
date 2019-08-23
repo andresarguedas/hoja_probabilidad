@@ -1,6 +1,7 @@
 # PDFs y CDFs conjuntas {#pdf}
 
 ## Distribuciones conjuntas
+
 La función de distribución conjunta de X y Y es 
 $F(x,y)=P(X\leq x, Y \leq y)$
 

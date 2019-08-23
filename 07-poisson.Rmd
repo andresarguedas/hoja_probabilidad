@@ -1,5 +1,6 @@
 # Proceso de Poisson {#poisson}
 
+
 $\textbf{Definición}$
 Tenemos un $\textbf{Proceso de Poisson}$ de grado $\lambda$ por unidad de tiempo si alguna de las siguientes condiciones se cumple:
 

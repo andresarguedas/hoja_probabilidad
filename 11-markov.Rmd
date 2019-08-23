@@ -53,7 +53,9 @@ Si usted tiene una PMF $\vec{s}$ y una cadena de Markov con una matriz de transi
 
 ## Caminata Aleatoria en una Red Indirecta
 
+
 ![](11.PNG)
+
 
 Si usted tiene una colección de $\textbf{nodos}$, de los cuales los pares se pueden conectar con $vérticess$ indirectos, y una cadena de Markov consiste en ir de un nodo actual a un nodo uniformemente aleatorio conectado a este con un vértice, eso es una caminata aleatorio en una red indirecta. La distribución estacionaria de una cadena es proporcional a la secuencia de grado (es la secuencia de grados, donde el grado de un nodo es cuantos vértices están unidos a este). Por ejemplo, la distribución estacionaria de una caminata aleatoria en una red mostrada arriba es proporcional a $(3,3,2,4,2)$, y también $(\frac{3}{14},\frac{3}{14},\frac{3}{14},\frac{4}{14}, \frac{2}{14})$.
 

@@ -15,6 +15,7 @@ $\textbf{Curtosis:} Kurt(X)=m_4-3$
 
 
 ## Funciones generatrices de momentos
+
 $\textbf{FGM:}$ Para cualquier variable X, la función
 
 $M_X(t) = E(e^{tX)}$

@@ -1,6 +1,7 @@
 # Estadísticos de Orden {#orden}
 
 $Definición$
+
 Digamos que usted tiene $n$ v.a. $X_1, X_2,...,X_n$ i.i.d. Si lo ordenamos de menor a mayor, el $i-ésimo$ elemento es el $i-ésimo$ estadístico de orden, denotado $X_{(i)}$. Entonces $X_{(1)}$ es el menor en la lista y $X_{(n)}$ es el mayor. 
 
 Note que los estadísticos de orden son $dependientes$, e.j. conociendo $X_{(4)}=42$ da la información de que $X_{(1)}, X_{(2)}, X_{(3)}$ son $\leq 42$ y $X_{(5)}, X_{(6)},...,X_{(n)}$ son $\ge 42$. 

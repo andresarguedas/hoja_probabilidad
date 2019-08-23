@@ -16,6 +16,7 @@ $Y \sim N(\mu_y, \sigma^2 _y)$
 Si las $X_i$ son i.i.d. con media $\mu_X$ y varianza $\sigma^2 _X$, entonces $\mu_Y=n\mu_X$ y $\sigma^2_Y=n\sigma^2_X$. Para la media muestral $\bar X_n$, el TLC dice
 $\bar X_n = \frac{1}{n}(X_1+X_2+...+X_n)\sim N(\mu_X, \sigma^2_x/n)$
 
+
 $\textbf{Distribuciones sintóticas utilizando el TLC}$
 
 Usamos $\xrightarrow{\;\; D \;\; }$ para denotar que $\textit{converge en distribución a}$ conforme $n \rightarrow \infty$. El TLC dice que si estandarizamos la suma $X_1+X_2+...+X_n$ entonces la distribución de la suma converge a $N(0,1)$ conforme $n \rightarrow \infty$:

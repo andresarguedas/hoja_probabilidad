@@ -13,4 +13,5 @@ $\bullet$ R Studio (https://www.rstudio.com)
 
 $\bullet$ Archivo LaTeX (github.com/wzchen/probability cheatsheet)
 
+
 $\textit{¡Porfavor compartir con amigos!}$

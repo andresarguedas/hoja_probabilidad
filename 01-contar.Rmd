@@ -9,7 +9,9 @@ Supongamos que se tiene un experimento compuesto (experimento con múltiples com
 ![](1.PNG)
 
 
+
 ## Espacio muestral
+
 
 ![](2.PNG)
 
