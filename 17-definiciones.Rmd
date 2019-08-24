@@ -1,0 +1,15 @@
+# Definiciones Varias {#definiciones}
+
+
+$\textbf{Medianas y Cuantiles:}$ 
+Digamos que X tiene CDF $F$. Entonces X tiene una mediana $m$ si $F(m) \ge 0.5$ y $P(X \ge m) \ge0.5$. Para X continua, $m$ satisface $F(m)=1/2$. En general, el $a-esimo$ cuantil de X es mín{$x:F(x)\ge a$}; la mediana es el caso $a=1/2$.
+
+$\textbf{log:}$ Los estadísticos (as) generalmente usan log para referirse a logaritmo natural (base $e$).
+
+$\textbf{v.a. i.i.d: }$ Variables aleatorias independientes e idénticamente distribuidas.
+
+$\textbf{CDF:}$ Función de distribución, por sus siglas en Inglés 
+
+$\textbf{PMF:}$ Función de probabilidad, por sus siglas en Inglés
+
+$\textbf{PDF:}$ Función de densidad, por sus siglas en Inglés

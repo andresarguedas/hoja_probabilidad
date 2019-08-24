@@ -1,0 +1,19 @@
+# Equivocaciones Comunes {#equivocaciones}
+
+
+Contribuciones de Jessy Hwang
+
+
+1. $\textbf{No utilice incorrectamente la definición simple de probabilidad.}$ Cuando conteste "¿cuál es la probabilidad de que en un grupo de 3 personas, ningún par haya nacido en el mismo mes?", $\textit{no}$ es correcto tratar a las personas como bolas indistinguibles que se colocan en 12 cajas, ya que eso asume que la lista de meses {Enero, Enero, Enero} es igual de probable que la lista {Enero, Abril, Junio}, aunque la segunda es seis veces mas probable.
+
+2. $\textbf{No confunda incondicional, condicional y probabilidades conjuntas.}$ Al aplicar $P(A|B)=\frac{P(A|B)P(A)}{P(B)}$ $\textit{no}$ es correcto decir "P(B) = 1 porque B ya ocurrió"; P(B) es la probabilidad $\textit{previa}$ de B. No confunda P(A|B) con P(A,B).
+
+3. $\textbf{No asuma independencia sin justificación.}$ En el problema de emparejamiento, la probabilidad de que la carta 1 sea emparejada y la carta 2 también no es $1/n^2$. La Binomial y la Hipergeométrica son comúnmente confundidas; los ensayos son independientes en la historia Binomial y dependientes en la historia Hipergeométrica. 
+
+4. $\textbf{No olvide hacer controles de cordura.}$ Las probabilidades deben estar entre 0 y 1. Las Varianzas deben ser $\ge 0$. Los dominios deben tener sentido. Las PMFs deben sumar 1. Las PDFs deben integrar a 1.
+
+5. $\textbf{No confunda variables aleatorias, números y eventos.}$ Sea X una v.a. Entonces $g(X)$ es una v.a. para cualquier función g. En particular $X^2$, $|X|$, $F(X)$, y $I_{X>3}$ son v.a.s. $P(X^2<X|X\ge0), E(X), Var(X)$ y $g(E(X))$ son números. $X=2$ y $F(X) \ge -1$ son eventos. No tiene sentido escribir $\int_{-\infty}^{\infty}F(X)dx$, porque $F(X)$ es una variable aleatoria. No tiene sentido escribir $P(X)$, porque $X$ no es un evento.
+
+6. $\textbf{No confunda una variable aleatoria con su distribución.}$ Para obtener la PDF de $X^2$ no se puede nada más hacer el cuadrado de la PDF de X. La forma correcta es usar transformaciones. Para obtener la PDF de $X+Y$ no puede nada mas sumar la PDF de X y la PDF de Y. La forma correcta es realizar una convolusión. 
+
+7. $\textbf{No extraiga funciones no lineales de esperanzas.}$ $E(g(X))$ no es lo mismo que $g(E(X))$ en general. La paradoja de San Petersburgo es un caso extremo. También puede ver la desigualdad de Jensen. La forma correcta de encontrar $E(g(X))$ es usando LOTUS.

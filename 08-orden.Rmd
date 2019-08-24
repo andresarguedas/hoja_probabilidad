@@ -1,0 +1,20 @@
+# Estadísticos de Orden {#orden}
+
+$Definición$
+
+Digamos que usted tiene $n$ v.a. $X_1, X_2,...,X_n$ i.i.d. Si lo ordenamos de menor a mayor, el $i-ésimo$ elemento es el $i-ésimo$ estadístico de orden, denotado $X_{(i)}$. Entonces $X_{(1)}$ es el menor en la lista y $X_{(n)}$ es el mayor. 
+
+Note que los estadísticos de orden son $dependientes$, e.j. conociendo $X_{(4)}=42$ da la información de que $X_{(1)}, X_{(2)}, X_{(3)}$ son $\leq 42$ y $X_{(5)}, X_{(6)},...,X_{(n)}$ son $\ge 42$. 
+
+$\textbf{Distribución}$
+
+Tomando $n$ variables aleatorias i.i.d. $X_{1}, X_2,...,X_n$ con CDF $F(x)$ y PDF $f(x)$, la CDF y la PDF de $X_{(i)}$ son:
+
+$F_{X_{(i)}}(x) = P(X_{(i)}\le x)=\displaystyle\sum_{k=i}^{n} \binom{n}{k} F(x)^k (1-F(x))^{n-k}$
+
+$f_{X_{(i)}}(x) = n\binom{n-1}{i-1} F(x)^{i-1} (1-F(x))^{n-i}f(x)$
+
+$\textbf{Estadísticos de orden uniformes}$
+El $j-ésimo$ estadístico de orden de los $U_1,...,U_n$~$Unif(0,1)$ i.i.d. es $U_{(j)}$~$Beta(j,n-j+1)$
+
+

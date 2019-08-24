@@ -1,0 +1,40 @@
+# Distribuciones Multivariadas {#multi}
+
+## Distribución Multinomial
+
+Digamos que el vector $\vec{X}=(X_1, X_2,X_3,...,X_k)\sim Mult_k(n,\vec{p})$ donde $\vec{p}=(p_1,p_2,...,p_k)$.
+
+$\textbf{Historia:}$ Tenemos $n$ ítems, los cuales pueden caer en cualquiera de las $k$ canastas independientemente con probabilidades $\vec{p}=(p_1,p_2,...,p_k)$.
+
+$\textbf{Ejemplo:}$ Asumamos que cada año 100 estudiantes en el Universo de Harry Potter son aleatoria e independientemente asignados a una de las cuatro casas con igual probabilidad. El número de personas en cada una de las casa se distribuye $Mult_k(100, \vec{p})$, donde $\vec{p}=c(0.25,0.25,0.25,0.25).$ Note que $X_1 + X_2 + ... + X_4=100$ y que son dependientes.
+
+$\textbf{PMF Conjunta:}$ Para $n=n_1+n_2+...+n_k$,
+$P(\vec{X}=\vec{n})=\frac{n!}{n_1!n_2!...n_k!}p_1^{n_1}p_2^{n_2}...p_k^{n_k}$
+
+$\textbf{PMF Marginal, Agrupamiento y Condicionales:}$ Marginalmente, $X_i \sim Bin(n,p)$ ya que podemos definir como "éxito" como la media de la categoría $i$. Si agrupa múltiples categorías juntas en una Multinomial, entonces todavía es Multinomial. Por ejemplo, $X_i + X_j \sim Bin(n, p_i + p_j)$ para $i \ne j$  ya que podemos definir como "éxito" la media de la categoría $i$ o $j$. Similarmente si $k=6$ y agrupamos las categorías 1-2 y agrupamos las categorías 3-5, entonces $(X_1 + X_2, X_3 + X_4, X_6) \sim Mult_3(n, (p_1+p_2, p_3+p_4+p)_5, p_6))$
+
+Condicionando con alguna $X_j$ también obtenemos una Multinomial:
+
+$X_1,...,X_{k-1}|X_k = nk \sim Mult_{k-1}\Big(n-n_k, \Big(\frac{p_1}{1-p_k},...,\frac{p_{k-1}}{1-p_k}\Big) \Big)$
+
+$\textbf{Varianza y Covarianzas:}$ Tenemos $X_i \sim Bin(n,p_i)$ marginalmente, entonces $Var(X_i)=np_i(1-p_i)$. También, $Cov(X_i, X_j)=-np_ip_j$ para $i \ne j$.
+
+
+## Distribución Uniforme Multivariada
+
+Vea la distribución Uniforme univariada para historias y ejemplos. Para la Uniforme 2D en una región cualquiera, la probabilidad es proporcional a su área. Todos los puntos en el dominio tiene igual densidad, de valor $\frac{1}{\text{área de la región}}$. Para la Uniforme 3D, la probabilidad es proporcional a su volumen. 
+
+## Distribución Normal Multivariada (NMV)
+
+Un vector $\vec{X}=(X_1, X_2, ..., X_k)$ es una Normal Multivariada si cada combinación lineal esta Normalmente distribuida, e.j. $t_1X_1 + t_2 X_2 + ...+t_kX_k$ es Normal para cualquier constantes $t_1, t_2,...,t_k$. Los parámetros de la Normal Multivariada son el $\textbf{vector de medias}$ $\vec{\mu}=(\mu_1 \mu_2,...,\mu_k)$ y la $\textbf{matriz de covarianza}$ donde la entrada $(i,j)$ es $Cov(X_i,X_j)$.
+
+$\textbf{Propiedades:}$ La Normal Multivariada tiene la siguientes propiedades
+
+$\bullet$ Cualquier subvector es también NMV
+
+$\bullet$ Si dos elementos cualquiera dentro de una NMV no están correlacionados, entonces son independientes.
+
+$\bullet$ La PDF conjunta de una Normal Bivariada $(X,Y)$ con distribuciones marginales $N(0,1)$ y correlación $\rho \in (-1,1)$ es
+
+$f_{X,Y}(x,y)= \frac{1}{2\pi \gamma}exp \Big(-\frac{1}{2\gamma^2}(x^2+y^2-2\rho xy) \Big)$,
+con $\gamma = \sqrt{1-\rho ^2}.$

@@ -1,0 +1,48 @@
+# Momentos y Funciones generadoras de momentos {#momentos} 
+
+
+## Momentos
+
+Describen la forma de un distribución. Sea X una v.a. con media igual a $\mu$ y desviación estándar $\sigma$, y $Z=(X-\mu)/\sigma$ es la versión $\textit{estandarizada}$ de X. El k-ésimo momento de X es $\mu_k = E(X^k)$ y el k-ésimo momento estandarizado de X es $m_k=E(Z^k)$. La media, varianza, asimetría y curtosis son resúmenes importantes de la forma de una distribución.
+
+$\textbf{Media:} E(X) =\mu_1$
+
+$\textbf{Varianza:}Var(X) = \mu_2 - \mu^2_1$
+
+$\textbf{Asimetría:} Skew(X) =m_3$
+
+$\textbf{Curtosis:} Kurt(X)=m_4-3$
+
+
+## Funciones generatrices de momentos
+
+$\textbf{FGM:}$ Para cualquier variable X, la función
+
+$M_X(t) = E(e^{tX)}$
+
+es la $\textbf{funcion generatriz de momentos}$ de X, si existe para cualquier valor de $t$ en un intervalo abierto que contiene a 0. La variable $t$ también podría haberse llamado $u$ o $v$. Es una herramienta  de registro que nos deja trabajar con la función $función$ $M_X$ en lugar de la $secuencia$ de momentos.
+
+$\textbf{¿Por qué se llama la función generatriz de momentos?}$ 
+Porque la $k-ésima$ derivada de la función generatriz de momentos, evaluado en 0, es el $k-ésimo$ momento de X.
+
+$\mu_k=E(X^k) = M_X^{(k)}(0)$
+
+Esta es la expansión de Taylor de $e^{tX}$ ya que
+$M_X(t) = E(e^{tX}) = \displaystyle\sum_{k=0}^\infty \frac{E(X^k)t^k}{k!} = \displaystyle\sum_{k=0}^\infty \frac{\mu_k t^k}{k!}$
+
+$\textbf{FGM de funciones lineales}$
+
+Si tenemos $Y = aX + b$ entonces
+
+$M_Y(t) = E(e^{t(aX+b)})=e^{bt}E(e^{(at)X})=e^{bt}M_X(at)$
+
+$\textbf{Unicidad}$
+Si $existe$, la FGM $\text{determina de forma única la distribución}$. Esto significa que para dos variables X y Y, tienen la misma distribución si y solo si sus FGM son iguales.
+
+$\text{Sumar V.A independientes multiplicando sus FGM}$
+Si X y Y son independientes, entonces
+$M_{X+Y}(t) = E(e^{t(X+Y)})=E(e^{tX})E(e^{tY})=M_X(t) * M_Y(t)$
+La FGM de la suma de dos variables aleatorias es el producto de las FGMs de estas dos variables aleatorias.
+
+
+

@@ -1,0 +1,21 @@
+# Proceso de Poisson {#poisson}
+
+
+$\textbf{Definición}$
+Tenemos un $\textbf{Proceso de Poisson}$ de grado $\lambda$ por unidad de tiempo si alguna de las siguientes condiciones se cumple:
+
+1. El número de llegadas en un intervalo de tiempo de longitud $t$ es $Pois(\lambda t)$.
+2. Los números de llegadas en intervalos de tiempo disjuntos son independientes.
+
+
+Por ejemplo, los números de llegadas en los intervalos de tiempo $[0,5], (5,12)$ y $[13,23)$ son independientes con distribuciones $Pois(5\lambda), Pois(7\lambda), Pois(10\lambda)$ respectivamente. 
+
+![](9.PNG)
+
+$\textbf{Dualidad Tiempo-Conteo}$
+
+Considere un proceso de Poisson de correos llegando a una bandeja de entrada a un ritmo de $\lambda$ correos por hora. Sea $T_n$ el tiempo de llegada de el $n- ésimo$ correo (relativo a un tiempo de inicio 0) y sea $N_t$ el numero de correos que llegan en $[0,t]$. Encontremos la distribución de $T_1$. El evento $T_1>1$, el evento en el que se tiene que esperar más de $t$ horas para recibir el primer correo, es el mismo evento que $N_t = 0$, es decir, el evento en el que no hay correos en las primeras $t$ horas. Entonces
+
+$P(T_1 > t) = P(N_t = 0)=e^{-\lambda t} \longrightarrow P(T_1 \leq t) = 1-e^{-\lambda t}$
+
+Tenemos $T_1 \sim Expo(\lambda)$. Por la propiedad de la Exponencial de no tener memoria y razonamiento similar, los tiempos entre llegadas entre los correos son i.i.d. $Expo(\lambda)$, e.j., las diferencias $T_n - T_{n-1}$ son i.i.d. $Expo(\lambda)$.

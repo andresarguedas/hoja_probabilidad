@@ -1,0 +1,37 @@
+# Esperanza Condicional {#espercond}
+
+
+$\textbf{Condicionando con un Evento}$
+
+Podemos encontrar $E(Y|A)$, el valor esperado de $Y$ dado que un evento $A$ ocurrió. Un caso muy importante es cuando $A$ es el evento $X=x$. Note que $E(Y|A)$ es un $número$. Por ejemplo:
+$\bullet$ El Valor esperado de una tirada de un dado justo, dado que es primo, es $\frac{1}{3}*2+\frac{1}{3}*3+\frac{1}{3}*5=\frac{10}{3}$
+$\bullet$ Sea $Y$ el número de éxitos en 10 pruebas independientes de Bernoulli con probabilidad $p$ de éxito. Sea $A$ el evento de que las primeras 3 pruebas sean éxitos. Entonces
+$E(Y|A)=3+7p$
+dado que el número de éxitos entre las 7 pruebas es $Bin(7,p)$
+$\bullet$ Sea $T$~$Expo(1/10)$ el tiempo que debe esperar hasta que el bus llegue. Dado que usted ya ha esperado $t$ minutos, el tiempo de espera adicional esperado es 10 minutos más. Esto es $E(T|T>t)=t+0$.
+
+
+| Y Discreta | Y Continua |
+|---------------|----------------------|
+| $E(Y)=\sum_{y} yP(Y=y)$ |  $E(Y)=\int_{-\infty}^{\infty} y f_Y(y)dy$  | 
+| $E(Y|A)=\sum_{y} yP(Y=y|A)$  |   $E(Y|A)=\int_{-\infty}^{\infty} y f_Y(y|A)dy$ | 
+
+
+$\textbf{Condicionando con una variable aleatoria}$
+
+También podemos encontrar $E(Y|X)$, el valor esperado de $Y$ dada la variable aleatoria $X$. Esto es un $\text{función de la variable aleatoria X}$. Esto $no$ es un número excepto en algunos casos específicos como si $X \perp Y$. Para encontrar $E(Y|X)$, encuentre $E(Y|X=x)$ y luego sustituya $X$ por $x$. Por ejemplo:
+$\bullet$ Si $E(Y|X=x)=x^3+5x$, entonces $E(Y|X)=X^3+5X$.
+$\bullet$ Sea $Y$ el número de éxitos en 10 pruebas independientes de Bernoulli con probabilidad de éxito $p$ y sea $X$ el número de éxitos en las primeras 3 pruebas. Entonces $E(Y|X)=X+7p$
+$\bullet$ Se $X$~$N(0,1)$ y $Y=X^2$. Entonces $E(Y|X=x)=x^2$ ya que sabemos que $X=x$ y que $Y=x^2$. Y $E(X|Y=y)=0$ y que sabemos que $Y=y$ y que $X= \pm \sqrt{y}$, con iguales probabilidades (por simetría). Entonces $E(Y|X)=X^2$, $E(X|Y)=0$.
+
+$\textbf{Propiedades del Valor Esperado Condicional}$
+
+1. $E(Y|X)=E(Y)$si $X \perp Y$
+
+2. $E(h(X)W|X)=h(X)E(W|X)\textbf{quitando lo que es conocido}$
+
+3. $E(E(Y|X))=E(Y)$ $\textbf{Ley de Adam=Ley de la Esperanza Total}$
+
+$\textbf{Ley de Adam (Ley de la Esperanza Total)}$
+
+$Var(Y)=E(Var(Y|X)) + Var(E(Y|X))$

@@ -1,0 +1,47 @@
+# Propiedades de las Distribuciones {#props}
+
+
+## CDFs Importantes
+
+$\textbf{Normal Estandar}=\Phi$
+
+$\textbf{Exponencial}(\lambda)= F(x)=1-e^{-\lambda x}$, para $x \in (0, \infty)$
+
+$\textbf{Uniforme(0,1)}=F(x)=x$ para $x \in (0,1)$
+
+## Convoluciones de Variables Aleatorias
+
+La convolución de $n$ variables aleatorias es simplemente su suma. Para los siguientes resultados, X y Y son $\textit{independientes}$.
+
+1. $X \sim Pois(\lambda_1), Y\sim Pois(\lambda_2) \longrightarrow X+Y \sim Pois(\lambda_1 + \lambda_2)$
+
+2. $X \sim Bin(n_1, p), Y \sim Bin(n_2,p) \longrightarrow X+Y \sim Bin(n_1+n_2, p)$. $Bin(n,p)$ puede pensarse como la suma de v.a. i.i.d. Bern(p)
+
+3. $X \sim Gamma(\alpha _1, \lambda), Y \sim Gamma(\alpha_2, \lambda) \longrightarrow X+Y \sim Gamma(\alpha _1 + \alpha _2, \lambda)$. $Gamma(n,\lambda)$ con $n$ entero puede pensarse como la suma de v.a. i.i.d. $Expo(\lambda)$.
+
+4. $X\sim NBin(r_1, p), Y \sim NBin(r_2, p) \longrightarrow X+Y \sim NBin(r_1+r_2,p)$. $NBin(r,p)$ puede pensarse como la suma de v.a. i.i.d. $Geom(p)$.
+
+5. $X \sim N(\mu_1, \sigma_1^2), Y\sim N(\mu_2, \sigma_2^2) \longrightarrow X+Y\sim N(\mu_1+\mu_2, \sigma_1 ^2+\sigma_2 ^2)$
+
+## Casos Especiales 
+
+1.$Bin(1,p)\sim Bern(p)$
+
+2.$Beta(1,1) \sim Unif(0,1)$
+
+3.$Gamma(1,\lambda)\sim Expo(\lambda)$
+
+4.$X^2_n\sim Gamma(\frac{n}{2}, \frac{1}{2})$
+
+5.$NBin(1,p)\sim Geom(p)$
+
+## Desigualdades 
+
+1.$\textbf{Cauchy-Schwarz}$ $|E(XY)| \le \sqrt{E(X^2)E(Y^2)}$
+
+2.$\tetxbf{Markov}$ $P(X \ge a) \le \frac{E|X|}{a}$ para a > 0
+
+3.$\textbf{Chebyshev}$ $P(|X-\mu|\ge a) \le \frac{\sigma^2}{\sigma^2}$ para $E(X)=\mu$, $Var(X)=\sigma^2$
+
+4.$\textbf{Jensen}$ $E(g(X)) \ge g(E(X))$ para $g$ convexa; al revés si $g$ es cóncava.
+
