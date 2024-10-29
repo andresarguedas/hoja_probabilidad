@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Pensando condicionalmente | Hoja de Referencia de Probabilidad</title>
+  <title>Page not found | Hoja de Referencia de Probabilidad</title>
   <meta name="description" content="Traducción de la hoja de referencia de probabilidad creada por William Chen et. al." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 Pensando condicionalmente | Hoja de Referencia de Probabilidad" />
+  <meta property="og:title" content="Page not found | Hoja de Referencia de Probabilidad" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Traducción de la hoja de referencia de probabilidad creada por William Chen et. al." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Pensando condicionalmente | Hoja de Referencia de Probabilidad" />
+  <meta name="twitter:title" content="Page not found | Hoja de Referencia de Probabilidad" />
   
   <meta name="twitter:description" content="Traducción de la hoja de referencia de probabilidad creada por William Chen et. al." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="contar.html"/>
-<link rel="next" href="variables-aleatorias-y-sus-distribuciones.html"/>
+
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -224,71 +224,19 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="condicional" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">2</span> Pensando condicionalmente<a href="condicional.html#condicional" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="independencia" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> Independencia<a href="condicional.html#independencia" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><span class="math inline">\(\textbf{Eventos Independientes:}\)</span> A y B son independientes si conociendo que el hecho de que A ocurrió no brinda información sobre si B ocurrió. Mas formalmente, A y B (lo cual tiene probabilidad de 0) son independientes si y solo si una de las siguientes sentencias equivalentes se cumple:</p>
-<p><span class="math inline">\(P(A\displaystyle\cap B) = P(A)P(B)\)</span></p>
-<p><span class="math inline">\(P(A|B)=P(A)\)</span></p>
-<p><span class="math inline">\(P(B|A)=P(B)\)</span></p>
-<p><span class="math inline">\(\textbf{Independencia condicional:}\)</span> A y B son condicionalmente independientes dado C si <span class="math inline">\(P(A\cap B|C) = P(A|C)P(B|C)\)</span>. La independencia condicional no implica independencia, y la independencia no implica independencia condicional.</p>
-</div>
-<div id="uniones-intersecciones-y-complementos" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Uniones, Intersecciones y Complementos<a href="condicional.html#uniones-intersecciones-y-complementos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><span class="math inline">\(\textbf{Ley de De Morgan:}\)</span> Una identidad útil que puede hacer que el calculo de probabilidades de uniones sean mas fáciles es relacionándolas con las intersecciones y viceversa. Resultados análogos se mantienen con más de 2 grupos.</p>
-<p><span class="math inline">\((A \cup B)^c = A^c \cap B^c\)</span></p>
-<p><span class="math inline">\((A \cap B)^c = A^c \cup B^c\)</span></p>
-</div>
-<div id="conjuntas-marginales-y-condicionales" class="section level2 hasAnchor" number="2.3">
-<h2><span class="header-section-number">2.3</span> Conjuntas, Marginales y Condicionales<a href="condicional.html#conjuntas-marginales-y-condicionales" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><span class="math inline">\(\textbf{Probabilidad Conjunta:}\)</span> <span class="math inline">\(P(A\cap B)\)</span> y <span class="math inline">\(P(A,B)\)</span> = Probabilidad de A y B</p>
-<p><span class="math inline">\(\textbf{Probabilidad Marginal (Incondicional):}\)</span> <span class="math inline">\(P(A)\)</span> = Probabilidad de A</p>
-<p><span class="math inline">\(\textbf{Probabilidad Condicional:}\)</span> <span class="math inline">\(P(A|B) = \frac{P(A,B)}{P(B)}\)</span> = Probabilidad de A dado B</p>
-<p><span class="math inline">\(\textbf{La Probabilidad Condicional es una probabilidad:}\)</span> <span class="math inline">\(P(A|B)\)</span> es una función de probabilidad para cualquier <span class="math inline">\(B\)</span> fija. Cualquier teorema que aplique para probabilidad también aplicqq para probabilidad condicional.</p>
-</div>
-<div id="probabilidad-de-unión-o-intersección" class="section level2 hasAnchor" number="2.4">
-<h2><span class="header-section-number">2.4</span> Probabilidad de Unión o Intersección<a href="condicional.html#probabilidad-de-unión-o-intersección" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><span class="math inline">\(\textbf{Intersección por condicionalidad:}\)</span></p>
-<p><span class="math inline">\(P(A\cup B) = P(A) + P(B) - P(A\cap B)\)</span></p>
-<p><span class="math inline">\(P(A\cup B \cup C) = P(A) + P(B) + P(C) - P(A\cap B) - P(A \cap C) - P(B \cap C) + P(A\cap B \cap C)\)</span></p>
-</div>
-<div id="la-paradoja-de-simpson" class="section level2 hasAnchor" number="2.5">
-<h2><span class="header-section-number">2.5</span> La paradoja de Simpson:<a href="condicional.html#la-paradoja-de-simpson" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="3.PNG" /></p>
-<p>Es posible tener <span class="math inline">\(P(A|B,C) &lt; P(A|B^{c},C)\)</span> y <span class="math inline">\(P(A|B,C^c) &lt; P(A|B^c,C^c)\)</span> pero también <span class="math inline">\(P(A|B) &gt; P(A|B^c)\)</span></p>
-</div>
-<div id="ley-de-la-probabilidad-total-lpt" class="section level2 hasAnchor" number="2.6">
-<h2><span class="header-section-number">2.6</span> Ley de la Probabilidad Total (LPT)<a href="condicional.html#ley-de-la-probabilidad-total-lpt" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Sea <span class="math inline">\(B_1,B_2,B_3,...,B_n\)</span> una <span class="math inline">\(\textit{particion}\)</span> del espacio muestral (es decir, son disjuntas y su unión es el espacio muestral completo).</p>
-<p><span class="math inline">\(P(A) = P(A|B_1)P(B_1) + P(A|B_2)P(B_2) + ... + P(A|B_n)P(B_n)\)</span></p>
-<p><span class="math inline">\(P(A) = P(A \cap B_1) + P(A\cap B_2) + .. + P(A\cap B_n)\)</span></p>
-<p>Para <span class="math inline">\(\textbf{LPT con condicionalidad extra}\)</span>, solo se agrega otro evento <span class="math inline">\(C!\)</span></p>
-<p><span class="math inline">\(P(A|C) = P(A|B_1,C)P(B_1|C) + .. + P(A|B_n,C)P(B_n|C)\)</span></p>
-<p><span class="math inline">\(P(A|C) = P(A\cap B_1|C) + P(A\cap B_2|C) + ... + P(A\cap B_n|C)\)</span></p>
-<p>Un caso especial de LPT con <span class="math inline">\(B\)</span> y <span class="math inline">\(B^c\)</span> como partición:</p>
-<p><span class="math inline">\(P(A) = P(A|B)P(B) + P(A|B^c)P(B^c)\)</span></p>
-<p><span class="math inline">\(P(A) = P(A\cap B) + P(C\cap B^c)\)</span></p>
-</div>
-<div id="regla-de-bayes" class="section level2 hasAnchor" number="2.7">
-<h2><span class="header-section-number">2.7</span> Regla de Bayes<a href="condicional.html#regla-de-bayes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><span class="math inline">\(\textbf{La regla de Bayes con condicionalidad extra (solo se agrega C!)}\)</span></p>
-<p><span class="math inline">\(P(A|B) = \frac{P(B|A)P(A)}{P(B)}\)</span></p>
-<p><span class="math inline">\(P(A|B,C) = \frac{P(B|A,C)P(A|C)}{P(B|C)}\)</span></p>
-<p>También se puede escribir</p>
-<p><span class="math inline">\(P(A|B,C) = \frac{P(A,B,C)}{P(B,C)} = \frac{P(B,C|A)P(A)}{P(B,C)}\)</span></p>
-<p><span class="math inline">\(\textbf{Forma de &quot;Odds&quot; de la Regla de Bayes}\)</span></p>
-<p><span class="math inline">\(\frac{P(A|B)}{P(A^c|B)} = \frac{P(B|A)}{P(B|A^c)} \frac{P(A)}{P(A^c)}\)</span></p>
-<p>Los <span class="math inline">\(\textit{odds posteriores}\)</span> de A son la <span class="math inline">\(\textit{razón de verosimilitud}\)</span> por los <span class="math inline">\(\textit{odds anteriores}\)</span></p>
-</div>
+<div id="page-not-found" class="section level1">
+<h1>Page not found</h1>
+<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
+<p>You may want to try searching to find the page's new location, or use
+the table of contents to find the page you are looking for.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="contar.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="variables-aleatorias-y-sus-distribuciones.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
